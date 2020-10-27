@@ -1,0 +1,1573 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="full-screen" content="yes" />
+
+<meta name="browsermode" content="application" />
+
+<meta name="x5-fullscreen" content="true" />
+
+<meta name="x5-page-mode" content="app" />
+
+<title data-n-head="true">快点搜</title>
+<meta data-n-head="true" charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta data-n-head="true" data-hid="keywords" name="keywords" content="快点搜,搜索,搜索引擎,高效率搜索,聚合搜索,简洁网址导航,网盘搜索,影视导航,ppt模板,网址大全,资源搜索,电商导航,免费资源,简单,高效,简洁">
+<meta data-n-head="true" data-hid="description" name="description" itemprop="description" content="【快点搜】搜索，快一点！">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel='stylesheet' id='nav-css' href='css/nav.css' type='text/css' media='all' />
+
+<link href="js/aa.js" rel="stylesheet">
+<link rel="icon" type="image/ico" href="favicon.ico">
+<!--[if lte IE 8]><script>window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href);</script><![endif]-->
+<style type="text/css">
+    mark {
+        background: #249ffd;
+    	color: #fff;
+    }
+	input::-webkit-input-placeholder{color:#fff;}
+    </style>
+<script src="js/jquery.min.js"></script>
+<style>:root{--t1:#2f3e4c;--t2:#ffffff;color:#2f3e4c}</style>
+</head>
+<body data-n-head="" y id="day" class="page-body">
+<div class="index_page">
+<div class="bgimg" style="filter:blur(4px);opacity:.5"></div>
+
+<main>
+	<div class="navbar">
+		<header>
+		<h1 class="title">
+		<a href="#" class="nuxt-link-exact-active nuxt-link-active">
+		QuickSo
+		</a>
+		</h1>
+		</header>
+	</div>
+
+<div id="search" class="s-search">
+<div id="search-list" class="hide-type-list">
+<div class="s-type">
+	<span></span>
+	<div class="s-type-list animated fadeInUp">
+		<label for="type-baidu">常用</label>
+		<label for="type-search">搜索</label>
+		<label for="type-zhihu">社区</label>
+		<label for="type-taobao1">生活</label>
+		<label for="type-baiduxue">工具</label>
+	</div>
+</div>
+<div class="search-group group-a">
+	<span class="type-text">常用</span>
+	<ul class="search-type">
+		<li>
+			<input checked hidden type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="搜索本站(Ctrl+F)">
+			<label for="type-baidu">
+				<span style="color:#0084ff">百度</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-google" value="https://www.google.com/search?q=" data-placeholder="404">
+			<label for="type-google">
+				<span style="color:#3B83FA">G</span>
+				<span style="color:#F3442C">o</span>
+				<span style="color:#FFC300">o</span>
+				<span style="color:#4696F8">g</span>
+				<span style="color:#2CAB4E">l</span>
+				<span style="color:#F54231">e</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-music" value="http://tool.liumingye.cn/music/?page=audioPage&type=YQD&name=" data-placeholder="音乐搜索下载">
+			<label for="type-music">
+				<span style="color:#007daa">音乐</span>
+			</label>
+		</li>
+		<li>	
+			<input hidden type="radio" name="type" id="type-dianying" value="https://www.pianku.tv/s/go.php?q=" data-placeholder="电影搜索">
+			<label for="type-dianying">
+				<span style="color:#f40">影视</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-快递100" value="https://m.kuaidihelp.com/express/queryResult?word=" data-placeholder="输入快递单号">
+			<label for="type-快递100">
+				<span style="color:#3278e6">查快递</span>
+			</label>
+		</li>
+	</ul>
+</div>
+<div class="search-group group-b">
+	<span class="type-text">搜索</span>
+	<ul class="search-type">
+		<li>
+		<input hidden type="radio" name="type" id="type-search" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下">
+		<label for="type-search">
+		<span style="color:#0084ff">百度</span>
+		</label>
+		</li>
+		<li>
+		<input hidden type="radio" name="type" id="type-google1" value="https://www.google.com/search?q=" data-placeholder="谷歌两下">
+		<label for="type-google1">
+			<span style="color:#3B83FA">G</span>
+			<span style="color:#F3442C">o</span>
+			<span style="color:#FFC300">o</span>
+			<span style="color:#4696F8">g</span>
+			<span style="color:#2CAB4E">l</span>
+			<span style="color:#F54231">e</span>
+		</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-360" value="https://www.so.com/s?q=" data-placeholder="360好搜">
+			<label for="type-360">
+			<span style="color:#19b955">360</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-sogo" value="https://www.sogou.com/web?query=" data-placeholder="搜狗搜索">
+			<label for="type-sogo">
+			<span style="color:#ff5943">搜狗</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索">
+			<label for="type-bing">
+			<span style="color:#007daa">Bing</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-sm" value="https://quark.sm.cn/s?q=" data-placeholder="夸克AI搜索">
+			<label for="type-sm">
+			<span style="color:#ff8608">夸克</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-yandex" value="https://yandex.com/search/?text=" data-placeholder="俄罗斯搜索引擎">
+			<label for="type-yandex">
+			<span style="color:#DC143C">Yandex</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-toutiao" value="https://m.toutiao.com/search?keyword=" data-placeholder="干掉百度？">
+			<label for="type-toutiao">
+			<span style="color:#ce2849">头条</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-duoji" value="https://www.dogedoge.com/results?q=" data-placeholder="不追踪，不误导。">
+			<label for="type-duoji">
+			<span style="color:#e7bf1c">多吉</span>
+			</label>
+		</li>
+		<li>
+			<input hidden type="radio" name="type" id="type-duckgo" value="https://duckduckgo.com/?q=" data-placeholder="隐私保护，化繁为简。">
+			<label for="type-duckgo">
+			<span style="color:#43ae1f">DuckGo</span>
+			</label>
+		</li>
+	</ul>
+</div>
+<div class="search-group group-d">
+	<span class="type-text">社区</span>
+	<ul class="search-type">
+		<li>
+		<input hidden type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&q=" data-placeholder="知乎">
+		<label for="type-zhihu">
+		<span style="color:#0084ff">知乎</span>
+		</label>
+		</li>
+		<li>
+		<input hidden type="radio" name="type" id="type-wechat" value="http://weixin.sogou.com/weixin?type=2&query=" data-placeholder="微信">
+		<label for="type-wechat">
+		<span style="color:#00a06a">微信</span>
+		</label>
+		</li>
+		<li>
+		<input hidden type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博">
+		<label for="type-weibo">
+		<span style="color:#e6162d">微博</span>
+		</label>
+		</li>
+		<li>
+		<input hidden type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="豆瓣">
+		<label for="type-douban">
+		<span style="color:#55a300">豆瓣</span>
+		</label>
+		</li>
+		<li>
+		<input hidden type="radio" name="type" id="type-bilibili" value="https://search.bilibili.com/all?keyword=" data-placeholder="哔哩哔哩">
+		<label for="type-bilibili">
+		<span style="color:#ca4286">Bilibili</span>
+		</label>
+		</li>
+		<li>
+		<input hidden type="radio" name="type" id="type-github" value="https://github.com/search?q=" data-placeholder="程序员社区">
+		<label for="type-github">
+		<span style="color:#000000">Github</span>
+		</label>
+		</li>
+	</ul>
+</div>
+<div class="search-group group-e">
+<span class="type-text">生活</span>
+<ul class="search-type">
+<li>
+<input hidden type="radio" name="type" id="type-taobao1" value="https://s.taobao.com/search?q=" data-placeholder="淘宝">
+<label for="type-taobao1">
+<span style="color:#f40">淘宝</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-jd" value="https://search.jd.com/Search?keyword=" data-placeholder="京东">
+<label for="type-jd">
+<span style="color:#c91623">京东</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-xiachufang" value="http://www.xiachufang.com/search/?keyword=" data-placeholder="下厨房">
+<label for="type-xiachufang">
+<span style="color:#dd3915">下厨房</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-xiangha" value="https://www.xiangha.com/so/?q=caipu&s=" data-placeholder="香哈菜谱">
+<label for="type-xiangha">
+<span style="color:#930">香哈菜谱</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-快递100" value="https://m.kuaidihelp.com/express/queryResult?word=" data-placeholder="输入快递单号">
+<label for="type-快递100">
+<span style="color:#3278e6">查快递</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-qunar" value="https://travelsearch.fliggy.com/index.htm?searchType=product&keyword=" data-placeholder="飞猪">
+<label for="type-qunar">
+<span style="color:#00afc7">飞猪</span>
+</label>
+</li>
+</ul>
+</div>
+<div class="search-group group-f">
+<span class="type-text">工具</span>
+<ul class="search-type">
+<li>
+<input hidden type="radio" name="type" id="type-baiduxue" value="http://xueshu.baidu.com/s?wd=" data-placeholder="请输入关键字">
+<label for="type-baiduxue">
+<span style="color:#689fee">百度学术</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-apk" value="https://sj.qq.com/myapp/search.htm?kw=" data-placeholder="请输入安卓应用名称">
+<label for="type-apk">
+<span style="color:#ff6000">安卓软件</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-exe" value="https://pc.qq.com/search.html#!keyword=" data-placeholder="请输入PC应用名称">
+<label for="type-exe">
+<span style="color:#00b38a">PC软件</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-tu" value="https://cn.bing.com/images/search?q=" data-placeholder="请输入关键字">
+<label for="type-tu">
+<span style="color:#00ff26">图片</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-map" value="http://ditu.amap.com/search?query==" data-placeholder="请输入地点">
+<label for="type-map">
+<span style="color:#0015ff">地图</span>
+</label>
+</li>
+<li>
+<input hidden type="radio" name="type" id="type-fanyi" value="https://translate.google.cn/#view=home&op=translate&sl=auto&tl=zh-CN&text=" data-placeholder="请输入词汇或句子">
+<label for="type-fanyi">
+<span style="color:#ff0000">翻译</span>
+</label>
+</li>
+</ul>
+</div>
+</div>
+<form action="?s=" method="get" target="_blank" id="super-search-fm">
+<input type="text" id="search-text" placeholder="输入关键字搜索" style="outline:0">
+<button type="submit">
+<i class="fa fa-search "></i>
+</button>
+</form>
+<div class="set-check hidden-xs">
+<input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+</div>
+</div>
+<script type="text/javascript">
+	eval(function(e, t, a, c, i, n) {
+	  if (i = function(e) {
+		  return (e < t ? "" : i(parseInt(e / t))) + (35 < (e %= t) ? String.fromCharCode(e + 29) : e.toString(36))
+		}, !"".replace(/^/, String)) {
+		for (; a--;) n[i(a)] = c[a] || i(a);
+		c = [function(e) {
+		  return n[e]
+		}], i = function() {
+		  return "\\w+"
+		}, a = 1
+	  }
+	  for (; a--;) c[a] && (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
+	  return e
+	}('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();',
+	  62, 77,
+	  "||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute"
+	  .split("|"), 0, {}));
+</script>
+
+<fieldset class="nya-container">
+<legend class="nya-title">
+	<i class="fa fa-volume-up"></i>
+	<span>公告</span>
+</legend>
+
+<marquee direction="left" behavior="scroll" scrollamount="4" scrolldelay="0" loop="-1" hspace="10" vspace="10">
+	<font color="black">公告📄:欢迎访问本站，如果你有什么好的想法或者建议可以提交给我们，欢迎加入！请安全、合法地使用导航，请勿浏览有关于政治、暴力、色情等国家明令禁止的信息，如果你想连接本WIFI,请前往4号公寓楼，输入密码:88888888</font></marquee>
+<center>
+<a id="jnkc" rel="nofollow" class="page_speeder_1602774156" href="http://wannianli.tianqi.com/" target="_blank" rel="nofollow">2018/8/8 下午7:08:40 星期六</a>
+</li>
+</center>
+	<script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
+	</script>
+<br> 
+<center>
+	<div class="tq">
+		<iframe allowtransparency="true" frameborder="0" width="317" height="28" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=1&t=1&v=0&d=1&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=317&h=28&align=center"></iframe>
+	</div>
+</center>
+</fieldset>
+
+<div class="favorites"></div>
+<div id="context">
+<fieldset class="nya-container">
+<legend class="nya-title">
+<i class="fa fa-telegram"></i>
+<span>常用</span>
+</legend>
+
+<a rel="nofollow" href="https://chat.getloli.com/room/@huangenet?title=欢迎来到欢哥の小屋" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥の小屋(聊天室)</a>
+<a rel="nofollow" href="http://music.ifkdy.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">音乐下载</a>
+<a rel="nofollow" href="tools/music/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥音乐</a>
+<a rel="nofollow" href="https://music.bluepill.one/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线音乐1</a>
+<a rel="nofollow" href="https://yinyue.qugeek.com/app/player" target="_blank" rel="noopener noreferrer" class="nya-btn">在线音乐2</a>
+<a rel="nofollow" href="tools/wallpaper" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥壁纸</a>
+<a rel="nofollow" href="tools/sjbz/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥手机壁纸</a>
+<a rel="nofollow" href="https://sm.ms" target="_blank" rel="noopener noreferrer" class="nya-btn">SM图床</a>
+<a rel="nofollow" href="https://ps.gaoding.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线ps</a>
+<a rel="nofollow" href="https://huangenet.speedtestcustom.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">网速测试</a>
+<a rel="nofollow" href="http://sina.lt/" target="_blank" rel="noopener noreferrer" class="nya-btn">短网址生成</a>
+<a rel="nofollow" href="https://tophub.today/" target="_blank" rel="noopener noreferrer" class="nya-btn">今日热榜</a>
+<a rel="nofollow" href="https://lncn.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">免费节点</a>
+<a rel="nofollow" href="https://ncov.dxy.cn/ncovh5/view/pneumonia" target="_blank" rel="noopener noreferrer" class="nya-btn">实时疫情</a>
+<a rel="nofollow" href="http://218.26.72.184:8080/zbxsjw/cas/login.action" target="_blank" rel="noopener noreferrer" class="nya-btn">中北信商教务管理</a>
+<a rel="nofollow" href="http://hgys.huangenet.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥影视1</a>
+<a rel="nofollow" href="https://quickso.cn/jx/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥影视2</a>
+<a rel="nofollow" href="http://huangenet.gitee.io/spjx/" target="_blank " rel="noopener noreferrer" class="nya-btn">欢哥VIP视频解析</a>
+<a rel="nofollow" href="tools/wsy/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥短视频解析</a>
+<a rel="nofollow" href="https://demo.glyptodon.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">15分钟云电脑</a>
+<a rel="nofollow" href="https://linuxstore.top/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥的Linux商店</a>
+<a rel="nofollow" href="https://www.huangenet.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥互联（免费网站空间）</a>
+<a rel="nofollow" href="tools/wangke/" target="_blank" rel="noopener noreferrer" class="nya-btn">网课一点通</a>
+<a rel="nofollow" href="http://www.qiujiasu05.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">白嫖机场1</a>
+<a rel="nofollow" href="https://ikuuu.co/auth/register?code=3yrg" target="_blank" rel="noopener noreferrer" class="nya-btn">白嫖机场2</a>
+<a rel="nofollow" href="https://www.xjycloud.xyz" target="_blank" rel="noopener noreferrer" class="nya-btn">白嫖机场3</a>
+<a rel="nofollow" href="https://sourl.cn/invite/qrv28bjgzw9t1nu7" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥网专属短链接</a>
+<a rel="nofollow" href="https://exmail.qq.com/qy_mng_logic/invite_form?vcode=4cb820922cb8e4fe3fd88e311ed02d66" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥网专属电子邮箱</a>
+<a rel="nofollow" href="https://pan.quickso.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥百度网盘下载器</a>
+<a rel="nofollow" href="https://hz956.apps.alicloudccp.com/index" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥云盘5T大空间（随时跑路~）</a>
+<a rel="nofollow" href="https://g.hgnet.workers.dev/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥镜像（谷歌）</a>
+<a rel="nofollow" href="https://wiki.hgnet.workers.dev/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥镜像（维基百科）</a>
+ <a rel="nofollow" href="https://duckgo.hgnet.workers.dev/" target="_blank" rel="noopener noreferrer" class="nya-btn">欢哥镜像（DuckDuckGo）</a>
+<a rel="nofollow" href="https://huangenet.lanzoui.com/b02zbjcid" target="_blank" rel="noopener noreferrer" class="nya-btn">o泡果奶安装包</a>
+</fieldset>
+<fieldset class="nya-container">
+<legend class="nya-title">
+<i class="fa fa-video-camera" aria-hidden="true"></i>
+<span>视频、音乐、阅读、动漫、二次元</span>
+</legend>
+<a rel="nofollow" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Youtube</a>
+<a rel="nofollow" href="https://video.feds.club/" target="_blank" rel="noopener noreferrer" class="nya-btn">Youtube镜像</a>
+<a rel="nofollow" href="https://v.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯视频</a>
+<a rel="nofollow" href="https://www.youku.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">优酷</a>
+<a rel="nofollow" href="https://www.iqiyi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱奇艺</a>
+<a rel="nofollow" href="http://www.zmz2019.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">字幕组</a>
+<a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank" rel="noopener noreferrer" class="nya-btn">ACFUN</a>
+<a rel="nofollow" href="https://www.bilibili.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">哔哩哔哩</a>
+<a rel="nofollow" href="http://www.rrys.tv/" target="_blank" rel="noopener noreferrer" class="nya-btn">人人影视</a>
+<a rel="nofollow" href="https://www.xinpianchang.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">新片场</a>
+<a rel="nofollow" href="https://www.hanfan.cc/" target="_blank" rel="noopener noreferrer" class="nya-btn">韩饭网</a>
+<a rel="nofollow" href="http://tv.tvvme.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">电视直播</a>
+<a rel="nofollow" href="http://www.haoqu.net/" target="_blank " rel="noopener noreferrer" class="nya-btn ">好趣网</a>
+<a rel="nofollow" href="https://www.pianku.tv/" target="_blank " rel="noopener noreferrer" class="nya-btn">片库网</a>
+<a rel="nofollow" href="http://www.80s.cm/" target="_blank " rel="noopener noreferrer" class="nya-btn ">80s电影</a>
+<a rel="nofollow" href="https://neets.cc/" target="_blank " rel="noopener noreferrer" class="nya-btn">Neets</a>
+<a rel="nofollow" href="http://1090ys.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">1090</a>
+<a rel="nofollow" href="https://www.dikotv.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">顶空影视</a>
+<a rel="nofollow" href="https://ddrk.me/" target="_blank " rel="noopener noreferrer" class="nya-btn">低端影视</a>
+<a rel="nofollow" href="https://tzfile.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">团长资源</a>
+<a rel="nofollow" href="https://tzfile.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">布谷TV</a>
+<a rel="nofollow" href="http://www.mvcat.com/" target="_blank " rel="noopener noreferrer" class="nya-btn " rel="noopener noreferrer" class="nya-btn">MVCAT</a>
+<a rel="nofollow" href="https://www.cupfox.com/" target="_blank " rel="noopener noreferrer" class="nya-btn " rel="noopener noreferrer" class="nya-btn">茶杯狐</a>
+<a rel="nofollow" href="https://music.163.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">网易云音乐</a>
+<a rel="nofollow" href="https://y.qq.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">QQ音乐</a>
+<a rel="nofollow" href="http://www.xiami.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">虾米音乐</a>
+<a rel="nofollow" href="http://www.kugou.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">酷狗音乐</a>
+<a rel="nofollow" href="http://www.kuwo.cn/" target="_blank " rel="noopener noreferrer" class="nya-btn">酷我音乐</a>
+<a rel="nofollow" href="http://music.baidu.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">百度音乐</a>
+<a rel="nofollow" href="http://music.migu.cn/" target="_blank " rel="noopener noreferrer" class="nya-btn">咪咕音乐</a>
+<a rel="nofollow" href="http://tongzhong.xyz/" target="_blank " rel="noopener noreferrer" class="nya-btn">铜钟</a>
+<a rel="nofollow" href="http://www.yinyueke.net/" target="_blank " rel="noopener noreferrer" class="nya-btn">音乐客</a>
+<a rel="nofollow" href="https://douban.fm/" target="_blank " rel="noopener noreferrer" class="nya-btn">豆瓣FM</a>
+<a rel="nofollow" href="https://sq688.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">超高无损音乐</a>
+<a rel="nofollow" href="https://www.bandari.net/" target="_blank " rel="noopener noreferrer" class="nya-btn">班得瑞</a>
+<a rel="nofollow" href="http://www.app-echo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Echo回声</a></li>
+<a rel="nofollow" href="http://huangenet.gitee.io/neteasemusic/" target="_blank " rel="noopener noreferrer" class="nya-btn">网易云随机音乐</a>
+<a rel="nofollow" href="https://www.qidian.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">起点中文网</a>
+<a rel="nofollow" href="https://weread.qq.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">微信读书</a>
+<a rel="nofollow" href="http://www.zongheng.com/" target="_blank " rel="noopener noreferrer" class="nya-btn" rel="noopener noreferrer" class="nya-btn">纵横中文网</a>
+<a rel="nofollow" href="https://www.owllook.net/" target="_blank " rel="noopener noreferrer" class="nya-btn">owllook</a>
+<a rel="nofollow" href="https://www.bookso.vip/" target="_blank " rel="noopener noreferrer" class="nya-btn">云搜小说</a>
+<a rel="nofollow" href="http://www.zxcs.me/" target="_blank " rel="noopener noreferrer" class="nya-btn">知轩藏书</a>
+<a rel="nofollow" href="http://www.15huang.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">书荒网</a>
+<a rel="nofollow" href="https://www.d4j.cn/" target="_blank " rel="noopener noreferrer" class="nya-btn">三秋书屋</a>
+<a rel="nofollow" href="http://www.soshuvip.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜书VIP</a>
+<a rel="nofollow" href="https://kgbook.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">苦瓜书盘</a>
+<a rel="nofollow" href="https://new.shuge.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">书格</a>
+<a rel="nofollow" href="http://m.imomoe.in/" target="_blank " rel="noopener noreferrer" class="nya-btn">樱花漫画</a>
+<a rel="nofollow" href="https://www.enjing.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">恩京的书房</a>
+<a rel="nofollow" href="https://i-book.in/" target="_blank " rel="noopener noreferrer" class="nya-btn">ibook</a>
+<a rel="nofollow" href="https://ebook2.lorefree.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">lorefree</a>
+<a rel="nofollow" href="https://www.bookstack.cn/" target="_blank " rel="noopener noreferrer" class="nya-btn">书栈网</a>
+<a rel="nofollow" href="https://www.xz577.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">码农之家</a>
+<a rel="nofollow" href="http://www.pdfbook.cn/" target="_blank " rel="noopener noreferrer" class="nya-btn">云海电子图书馆</a>
+<a rel="nofollow" href="http://ireadweek.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">周读</a>
+<a rel="nofollow" href="https://www.jb51.net/books/" target="_blank " rel="noopener noreferrer" class="nya-btn">脚本之家</a>
+<a rel="nofollow" href="https://bcy.net/" target="_blank " rel="noopener noreferrer" class="nya-btn">半次元</a>
+<a rel="nofollow" href="https://www.u17.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">有妖气</a>
+<a rel="nofollow" href="https://www.dilidili99.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">嘀哩嘀哩</a>
+<a rel="nofollow" href="https://ac.qq.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">腾讯动漫</a>
+<a rel="nofollow" href="https://www.missevan.com/" target="_blank " rel="noopener noreferrer" class="nya-btn">动漫花园</a>
+<a rel="nofollow" href="https://www.36dm.club/" target="_blank " rel="noopener noreferrer" class="nya-btn">简单动漫</a>
+<a rel="nofollow" href="https://nyaa.net/" target="_blank " rel="noopener noreferrer" class="nya-btn">Nyaa</a>
+<a rel="nofollow" href="https://share.acgnx.se/" target="_blank " rel="noopener noreferrer" class="nya-btn">末日动漫</a>
+<a rel="nofollow" href="https://www.kisssub.org/" target="_blank " rel="noopener noreferrer" class="nya-btn">爱恋动漫</a>
+<a rel="nofollow" href="https://trace.moe/" target="_blank " rel="noopener noreferrer" class="nya-btn">以图搜番</a>
+</fieldset>
+<fieldset class="nya-container">
+<legend class="nya-title">
+<i class="fa fa-comments-o" aria-hidden="true"></i>
+<span>论坛、社交</span>
+</legend>
+<a rel="nofollow" href="https://www.csdn.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">CSDN</a></li>
+<a rel="nofollow" href="https://www.cnblogs.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">博客园</a></li>
+<a rel="nofollow" href="https://www.v2ex.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">V2EX</a></li>
+<a rel="nofollow" href="https://www.weibo.com" target="_blank" rel="noopener noreferrer" class="nya-btn">微博</a></li>
+<a rel="nofollow" href="https://www.zhihu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">知乎</a></li>
+<a rel="nofollow" href="https://tieba.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度贴吧</a></li>
+<a rel="nofollow" href="https://www.jianshu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">简书</a></li>
+<a rel="nofollow" href="https://www.douban.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>豆瓣</a></li>
+<a rel="nofollow" href="https://segmentfault.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">SF思否</a></li>
+<a rel="nofollow" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>Instagram</a></li>
+<a rel="nofollow" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="nya-btn">Twitter</a></li>
+<a rel="nofollow" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="nya-btn">Facebook</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-cog" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>工具</span>
+</legend>
+<a rel="nofollow" href="https://duckduckgo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">DuckDuckGo</a></li>
+<a rel="nofollow" href="https://magi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Magi</a></li>
+<a rel="nofollow" href="https://www.yahoo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Yahoo</a></li>
+<a rel="nofollow" href="https://www.qwant.com" target="_blank" rel="noopener noreferrer" class="nya-btn">Qwant</a></li>
+<a rel="nofollow" href="https://zh.wikipedia.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">Wikipedia</a></li>
+<a rel="nofollow" href="https://www.ipip.net/ip.html" target="_blank" rel="noopener noreferrer" class="nya-btn">IP查询</a></li>
+<a rel="nofollow" href="http://www.fynas.com/ua" target="_blank" rel="noopener noreferrer" class="nya-btn">UA查询</a></li>
+<a rel="nofollow" href="https://translate.google.cn/?hl=zh-CN" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌翻译</a></li>
+<a rel="nofollow" href="https://fanyi.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度翻译</a></li>
+<a rel="nofollow" href="https://fanyi.sogou.com" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狗翻译</a></li>
+<a rel="nofollow" href="https://fanyi.caiyunapp.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">彩云翻译</a></li>
+<a rel="nofollow" href="http://fanyi.youdao.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">有道翻译</a></li>
+<a rel="nofollow" href="https://cn.bing.com/translator?mkt=zh-CN" target="_blank" rel="noopener noreferrer" class="nya-btn">必应翻译</a></li>
+<a rel="nofollow" href="https://translate.yandex.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Yandex翻译</a></li>
+<a rel="nofollow" href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer" class="nya-btn">Deepl翻译</a></li>
+<a rel="nofollow" href="http://www.slimego.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">史莱姆</a></li>
+<a rel="nofollow" href="https://ac.scmor.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌镜像1</a></li>
+<a rel="nofollow" href="http://scholar.hedasudi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌镜像2</a>
+<a rel="nofollow" href="https://www.baidu.com/s?ie=UTF-8&wd=%E8%B0%B7%E6%AD%8C%E9%95%9C%E5%83%8F" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌镜像3</a>
+<a rel="nofollow" href="https://feedly.com" target="_blank" rel="noopener noreferrer" class="nya-btn">Feedly</a></li>
+<a rel="nofollow" href="https://pan.baidu.com" target="_blank" rel="noopener noreferrer" class="nya-btn">百度网盘</a></li>
+<a rel="nofollow" href="https://www.weiyun.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯微云</a></li>
+<a rel="nofollow" href="https://pan.xunlei.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">迅雷云盘</a></li>
+<a rel="nofollow" href="https://onedrive.live.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">OneDrive</a></li>
+<a rel="nofollow" href="https://www.drive.google.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">GoogleDrive</a></li>
+<a href="https://mega.nz/" rel="noopener noreferrer" class="nya-btn">MEGA</a></li>
+<a rel="nofollow" href="http://ys168.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">永硕E盘</a></li>
+<a rel="nofollow" href="https://wodemo.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">我的磨</a></li>
+<a rel="nofollow" href="https://www.wenshushu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">文叔叔</a></li>
+<a rel="nofollow" href="https://cowtransfer.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">奶牛快传</a></li>
+<a rel="nofollow" href="https://cp.anyknew.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">拷贝兔</a></li>
+<a rel="nofollow" href="https://send.firefox.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Firefox Send</a></li>
+<a rel="nofollow" href="https://www.ppzhilian.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">皮皮直连</a></li>
+<a rel="nofollow" href="http://qingwendang.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">轻文档</a></li>
+<a rel="nofollow" href="https://www.lanzou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">蓝奏云</a></li>
+<a rel="nofollow" href="https://www.ctfile.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">城通网盘</a></li>
+<a rel="nofollow" href="https://v3-beta.6pan.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">6盘</a></li>
+<a rel="nofollow" href="https://eyun.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度企业网盘</a></li>
+<a rel="nofollow" href="http://pandl.live/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度网盘解析1</a></li>
+<a rel="nofollow" href="https://pan.dupan.me/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度网盘解析2</a>
+<a rel="nofollow" href="https://007ys.cn/all/tianyi/" target="_blank" rel="noopener noreferrer" class="nya-btn">天翼网盘解析</a></li>
+<a rel="nofollow" href="https://mover.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">网盘搬家</a>
+<a rel="nofollow" href="https://www.mdeditor.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">MD编辑器</a></li>
+<a rel="nofollow" href="https://tools.miku.ac/" target="_blank" rel="noopener noreferrer" class="nya-btn">MikuTools</a></li>
+<a rel="nofollow" href="https://ping.pe" target="_blank" rel="noopener noreferrer" class="nya-btn">Ping.pe</a></li>
+<a rel="nofollow" href="https://html5test.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Html5Test</a></li>
+<a rel="nofollow" href="https://ping.chinaz.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">站长Ping</a></li>
+<a rel="nofollow" href="https://search.chongbuluo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">快搜</a></li>
+<a rel="nofollow" href="https://tv.sogou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狗视频搜索</a></li>
+<a rel="nofollow" href="https://www.tubeoffline.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线视频下载</a></li>
+<a rel="nofollow" href="https://www.parsevideo.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">短视频下载</a></li>
+<a rel="nofollow" href="http://www.shipinyu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">视频鱼</a></li>
+<a rel="nofollow" href="https://kuaiyinshi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">快音视</a></li>
+<a rel="nofollow" href="https://v.urlgot.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Urlgot</a></li>
+<a href="https://www.clipconverter.cc/2/" rel="noopener noreferrer" class="nya-btn">油管视频下载</a></li>
+<a rel="nofollow" href="https://xbeibeix.com/api/bilibili/" target="_blank" rel="noopener noreferrer" class="nya-btn">Bilibili视频解析1</a></li>
+<a rel="nofollow" href="https://www.jijidown.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Bilibili视频解析2</a></li>
+<a href="https://youtubemultidownloader.net/playlists.html" rel="noopener noreferrer" class="nya-btn">Youtube Multi Downloader</a></li>
+<a rel="nofollow" href="https://moresound.tk/music/tool/" target="_blank" rel="noopener noreferrer" class="nya-btn">音乐解锁</a></li>
+<a rel="nofollow" href="https://dwz.51.la/" target="_blank" rel="noopener noreferrer" class="nya-btn">51短网址</a></li>
+<a rel="nofollow" href="https://www.91she.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">91She防红</a></li>
+<a rel="nofollow" href="http://www.gjw123.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">工具123</a></li>
+<a rel="nofollow" href="http://www.nicetool.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">NiceTool</a></li>
+<a rel="nofollow" href="https://www.toolnb.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱资料工具</a></li>
+<a rel="nofollow" href="https://tool.lu/" target="_blank" rel="noopener noreferrer" class="nya-btn">程序员工具箱</a></li>
+<a rel="nofollow" href="http://www.html22.com/zh/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度文库下载1</a></li>
+<a rel="nofollow" href="https://www.wenku.zone/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度文库下载2</a></li>
+<a rel="nofollow" href="https://www.tianyancha.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">天眼查</a></li>
+<a rel="nofollow" href="https://www.glyphy.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">特殊字符</a></li>
+<a rel="nofollow" href="https://yhjf.cc/" target="_blank" rel="noopener noreferrer" class="nya-btn">阅后即焚</a></li>
+<a rel="nofollow" href="https://www.cn-ki.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">iData</a></li>
+<a rel="nofollow" href="https://v0v.bid/" target="_blank" rel="noopener noreferrer" class="nya-btn">Windows激活</a></li>
+<a rel="nofollow" href="https://123apps.com/cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">123Apps</a></li>
+<a rel="nofollow" href="https://uzer.me/" target="_blank" rel="noopener noreferrer" class="nya-btn">UZER.ME</a></li>
+<a rel="nofollow" href="https://www.becmd.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线接码1</a></li>
+<a rel="nofollow" href="https://www.suiyongsuiqi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线接码2</a></li>
+<a rel="nofollow" href="http://www.z-sms.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线接码3</a></li>
+<a href="https://fonts.safe.360.cn/" rel="noopener noreferrer" class="nya-btn">360查字体</a></li>
+<a href="https://www.metalgearjoe.cn/mn/" rel="noopener noreferrer" class="nya-btn">垃圾分类指南</a></li>
+<a href="https://time.is/" rel="noopener noreferrer" class="nya-btn">精确时间</a></li>
+<a rel="nofollow" href="http://v.own-cloud.cn/s/bmazh8go" target="_blank" rel="noopener noreferrer" class="nya-btn">论文工具包</a></li>
+<a rel="nofollow" href="http://www.yuntougao.com/wenxian/" target="_blank" rel="noopener noreferrer" class="nya-btn">论文文献下载1</a></li>
+<a rel="nofollow" href="http://tool.yovisun.com/scihub/" target="_blank" rel="noopener noreferrer" class="nya-btn">论文文献下载2</a></li>
+<a rel="nofollow" href="http://www.sci-hub.ac.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">论文文献下载3</a></li>
+<a rel="nofollow" href="https://sci-bay.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">论文文献下载4</a></li>
+<a rel="nofollow" href="https://ifish.fun/paper/scihub" target="_blank" rel="noopener noreferrer" class="nya-btn">论文文献下载5</a></li>
+<a rel="nofollow" href="http://www.bj.cxstar.cn/bookcd/index/index.do" target="_blank" rel="noopener noreferrer" class="nya-btn">光盘数据库</a></li>
+<a href="https://dxss.miit.gov.cn/" rel="noopener noreferrer" class="nya-btn">工信部投诉</a></li>
+<a href="https://www.omnicalculator.com" rel="noopener noreferrer" class="nya-btn">Omni Calculator</a></li>
+<a href="https://fast.com/" rel="noopener noreferrer" class="nya-btn">Fast.com</a></li>
+<a href="tools/ip/" rel="noopener noreferrer" class="nya-btn">IP检测</a></li>
+<a href="tools/kxjsq" rel="noopener noreferrer" class="nya-btn">科学计算器</a></li>
+<a href="tools/password" rel="noopener noreferrer" class="nya-btn">随机密码生成器</a></li>
+<a href="tools/tu" rel="noopener noreferrer" class="nya-btn">欢哥图床</a></li>
+<a href="tools/gxsc" rel="noopener noreferrer" class="nya-btn">光效生成</a></li>
+<a href="tools/guichu" rel="noopener noreferrer" class="nya-btn">鬼畜字符生成器</a></li>
+<a href="tools/json" rel="noopener noreferrer" class="nya-btn">JSON</a></li>
+<a href="tools/kouzhao" rel="noopener noreferrer" class="nya-btn">口罩头像生成工具</a></li>
+<a href="http://signet.skyfont.com" rel="noopener noreferrer" class="nya-btn">印章在线生成</a></li>
+<a href="http://www.playtv.com.cn/" rel="noopener noreferrer" class="nya-btn">卫星电视节目参数</a></li>
+<a href="https://huangenet.gitee.io/lovechina/" rel="noopener noreferrer" class="nya-btn">国旗头像生成</a></li>
+<a href="https://m.zol.com.cn/cpu/soc.html" rel="noopener noreferrer" class="nya-btn">电脑CPU天梯图</a></li>
+<a href="https://www.mydrivers.com/zhuanti/tianti/01/" rel="noopener noreferrer" class="nya-btn">手机CPU天梯图</a></li>
+<a href="https://www.draw.io/" rel="noopener noreferrer" class="nya-btn">流程图在线制作</a></li>
+<a href="tools/cl" rel="noopener noreferrer" class="nya-btn">欢哥磁力播放器</a></li>
+<a href="tools/color" rel="noopener noreferrer" class="nya-btn">择色器</a></li>
+<a href="tools/2wm2" rel="noopener noreferrer" class="nya-btn">二维码生成</a></li>
+<a href="https://colourise.sg/" rel="noopener noreferrer" class="nya-btn">老照片翻新</a></li>
+<a href="tools/txttovoice" rel="noopener noreferrer" class="nya-btn">文字转语音</a></li>
+<a href="tools/suoluetu" rel="noopener noreferrer" class="nya-btn">网站缩略图生成</a></li>
+<a href="http://www.cmtop.cn/" rel="noopener noreferrer" class="nya-btn">图片加密平台</a></li>
+<a href="https://www.e4dai.com/tool/CreditCard.asp" rel="noopener noreferrer" class="nya-btn">信用卡号生成器</a></li>
+<a href="https://thispersondoesnotexist.com/" rel="noopener noreferrer" class="nya-btn">AI人脸生成器</a></li>
+<a href="http://www.haoweichi.com/" rel="noopener noreferrer" class="nya-btn">虚拟地址生成</a></li>
+<a href="http://www.termonline.cn/index.htm" rel="noopener noreferrer" class="nya-btn">术语查询</a></li>
+<a href="https://www.soman.com/" rel="noopener noreferrer" class="nya-btn">搜漫</a></li>
+<a href="http://tools.bugscaner.com/weibo/" rel="noopener noreferrer" class="nya-btn">图片找人</a></li>
+<a href="http://search.chinalaw.gov.cn/search2.html" rel="noopener noreferrer" class="nya-btn">法律法规数据库</a></li>
+<a href="https://www.gobaidugle.com/" rel="noopener noreferrer" class="nya-btn">谷百度歌</a></li>
+<a href="https://www.test-ipv6.com/" rel="noopener noreferrer" class="nya-btn">IPV6测试</a></li>
+<a rel="nofollow" href="https://dydata.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">数据可视化</a></li>
+<a rel="nofollow" href="http://bigjpg.com/zh" target="_blank" rel="noopener noreferrer" class="nya-btn">图片无限变放大</a></li>
+<a rel="nofollow" href="https://imgchr.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">路过图床</a></li>
+<a rel="nofollow" href="https://www.hualigs.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">遇见图床</a></li>
+<a rel="nofollow" href="https://imgurl.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">ImgURL</a></li>
+<a rel="nofollow" href="https://www.bookmarkearth.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">书签地球</a></li>
+<a href="https://www.99pdf.com/" rel="noopener noreferrer" class="nya-btn">99PDF</a></li>
+<a href="http://www.network-science.de/ascii/" rel="noopener noreferrer" class="nya-btn">ASCIIFlow Infinity</a></li>
+<a href="https://caniuse.com/" rel="noopener noreferrer" class="nya-btn">Can I use</a></li>
+<a href="https://www.yoga-8.com/" rel="noopener noreferrer" class="nya-btn">牛人歌谱</a></li>
+<a href="https://docs.rsshub.app/" rel="noopener noreferrer" class="nya-btn">Rsshub</a></li>
+<a href="tools/pengyouquan" rel="noopener noreferrer" class="nya-btn">朋友圈转发截图生成工具</a></li>
+<a href="https://www.kapwing.com/mobile-mockup" rel="noopener noreferrer" class="nya-btn">手机带壳截图</a></li>
+<a rel="nofollow" href="https://bazhan.me/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线扒站工具</a>
+<a rel="nofollow" href="https://cn.govopendata.com/xinwenlianbo/" target="_blank" rel="noopener noreferrer" class="nya-btn">新闻联播文字版</a></li>
+<a rel="nofollow" href="https://www.cqid.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">业余无线电模拟考试平台</a></li>
+<a rel="nofollow" href="https://hizdm.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">张大妈计算器</a></li>
+<a rel="nofollow" href="https://airsend.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">隔空发送</a></li>
+<a rel="nofollow" href="https://www.apowersoft.cn/free-online-screen-recorder" target="_blank" rel="noopener noreferrer" class="nya-btn">在线录屏</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-share-alt" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>软件、资源、网盘</span>
+</legend>
+<a rel="nofollow" href="https://www.52pojie.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">吾爱破解</a></li>
+<a rel="nofollow" href="https://www.right.com.cn/forum/" target="_blank" rel="noopener noreferrer" class="nya-btn">恩山无线论坛</a>
+<a rel="nofollow" href="https://www.coolapk.com/apk/" target="_blank" rel="noopener noreferrer" class="nya-btn">酷安</a></li>
+<a rel="nofollow" href="https://soft.shouji.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">手机乐园</a></li>
+<a rel="nofollow" href="https://play.google.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Google play</a></li>
+<a rel="nofollow" href="https://m.apkpure.com/cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">ApkPure</a></li>
+<a rel="nofollow" href="https://apkcombo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Apkcombo</a></li>
+<a rel="nofollow" href="https://apkdl.in/" target="_blank" rel="noopener noreferrer" class="nya-btn">Apkdl.in</a></li>
+<a rel="nofollow" href="https://apkhome.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Apkhome</a></li>
+<a rel="nofollow" href="https://a2zapk.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">A2zApk</a></li>
+<a rel="nofollow" href="https://opengapps.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">OpenGapps</a></li>
+<a rel="nofollow" href="https://www.xbext.com/docs/bookmark/the-most-popular-ad-blocking-rules/" target="_blank" rel="noopener noreferrer" class="nya-btn">浏览器广告拦截规则</a></li>
+<a rel="nofollow" href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" class="nya-btn">Chrome应用商店</a></li>
+<a rel="nofollow" href="https://microsoftedge.microsoft.com/insider-addons?hl=zh-CN" target="_blank" rel="noopener noreferrer" class="nya-btn">Edge Addons</a></li>
+<a rel="nofollow" href="https://addons.opera.com/zh-cn/extensions/" target="_blank" rel="noopener noreferrer" class="nya-btn">Opera拓展商店</a></li>
+<a rel="nofollow" href="http://baoku.360.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">360软件</a></li>
+<a rel="nofollow" href="http://pc.qq.com" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯软件</a></li>
+<a rel="nofollow" href="https://github.com/Awesome-Windows/Awesome/blob/master/README-cn.md" target="_blank" rel="noopener noreferrer" class="nya-btn">电脑软件推荐</a></li>
+<a rel="nofollow" href="https://sspai.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">少数派</a></li>
+<a rel="nofollow" href="https://www.iplaysoft.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">异次元</a></li>
+<a rel="nofollow" href="https://www.appinn.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">小众应用</a></li>
+<a rel="nofollow" href="https://www.ghpym.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">果核剥壳</a></li>
+<a rel="nofollow" href="https://www.423down.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">423Down</a></li>
+<a rel="nofollow" href="https://www.portablesoft.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">精品绿色便携软件</a></li>
+<a rel="nofollow" href="https://www.ttrar.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">天天软件</a></li>
+<a rel="nofollow" href="https://win.o--o.win/" target="_blank" rel="noopener noreferrer" class="nya-btn">大白软件站</a></li>
+<a rel="nofollow" href="http://www.carrotchou.blog/" target="_blank" rel="noopener noreferrer" class="nya-btn">胡萝卜周</a></li>
+<a rel="nofollow" href="https://www.appcgn.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">软件缘</a></li>
+<a rel="nofollow" href="http://www.yxssp.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">异星软件空间</a></li>
+<a rel="nofollow" href="http://www.dugubest.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">独孤求软</a></li>
+<a rel="nofollow" href="https://alternativeto.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">软件替代品</a></li>
+<a rel="nofollow" href="https://greasyfork.org/zh-CN/scripts" target="_blank" rel="noopener noreferrer" class="nya-btn">油猴脚本</a></li>
+<a rel="nofollow" href="https://huangenet.github.io/hgcjdh/" target="_blank" rel="noopener noreferrer" class="nya-btn">浏览器插件</a></li>
+<a rel="nofollow" href="https://liulanmi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">浏览迷</a></li>
+<a rel="nofollow" href="https://www.jiumodiary.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">鸠摩搜书</a></li>
+<a rel="nofollow" href="https://free.com.tw/" target="_blank" rel="noopener noreferrer" class="nya-btn">台湾免费分享社区</a></li>
+<a rel="nofollow" href="https://hao.su/" target="_blank" rel="noopener noreferrer" class="nya-btn">不死鸟</a></li>
+<a rel="nofollow" href="https://51.ruyo.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">如有乐享</a></li>
+<a rel="nofollow" href="http://zntx.cc/" target="_blank" rel="noopener noreferrer" class="nya-btn">八神论坛</a></li>
+<a rel="nofollow" href="http://www.zhiyoo.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">智友论坛</a></li>
+<a rel="nofollow" href="https://bbs.kafan.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">卡饭论坛</a></li>
+<a rel="nofollow" href="https://adzhp.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱达杂货铺</a></li>
+<a rel="nofollow" href="https://coderschool.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">技术拉近你我</a></li>
+<a rel="nofollow" href="https://gxzyzd.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">共享资源站点</a></li>
+<a rel="nofollow" href="https://getitfree.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">正版中国</a></li>
+<a rel="nofollow" href="http://www.zdfans.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">zd423</a></li>
+<a rel="nofollow" href="https://www.gopojie.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Go破解</a></li>
+<a rel="nofollow" href="https://www.mpyit.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">殁漂遥</a></li>
+<a rel="nofollow" href="https://www.xiaobaipan.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">小白盘</a></li>
+<a rel="nofollow" href="https://www.quzhuanpan.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">去转盘</a></li>
+<a rel="nofollow" href="http://www.pansou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">盘搜</a></li>
+<a rel="nofollow" href="http://www.tebaidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">特白度</a></li>
+<a rel="nofollow" href="https://www.xiaokesoso.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">小可搜搜</a></li>
+<a rel="nofollow" href="http://www.xgsoso.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">西瓜搜搜</a></li>
+<a rel="nofollow" href="http://www.aiyoweia.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">哎哟喂啊</a></li>
+<a rel="nofollow" href="https://www.dalipan.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">大力盘</a></li>
+<a rel="nofollow" href="http://www.yunpangou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">云盘狗</a></li>
+<a rel="nofollow" href="https://www.luomapan.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">罗马盘</a></li>
+<a rel="nofollow" href="https://www.fastsoso.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">FAstSoSo</a></li>
+<a rel="nofollow" href="https://u3c3.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">U3C3</a></li>
+<a rel="nofollow" href="http://ciligou.top/" target="_blank" rel="noopener noreferrer" class="nya-btn">磁力狗</a></li>
+<a rel="nofollow" href="https://zh.0mag.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">无极磁链</a></li>
+<a rel="nofollow" href="https://www.cilixingqiu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">磁力星球</a></li>
+<a rel="nofollow" href="https://openbt.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">磁力岛</a></li>
+<a rel="nofollow" href="http://btfox0.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">btfox</a></li>
+<a rel="nofollow" href="https://tb.rg-adguard.net/public.php?lang=zh-CN" target="_blank" rel="noopener noreferrer" class="nya-btn">微软系统office</a></li>
+<a rel="nofollow" href="http://www.sssoou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">电报资源频道搜索</a></li>
+<a rel="nofollow" href="https://pan.ischenxin.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">蓝奏网盘搜索</a></li>
+<a rel="nofollow" href="https://whatintheworld.xyz/" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌网盘搜索</a></li>
+<a rel="nofollow" href="https://gezhong.vip" target="_blank" rel="noopener noreferrer" class="nya-btn">各种</a></li>
+<a rel="nofollow" href="https://www.chaonengsou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">超能搜</a></li>
+<a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">MSDN下载</a></li>
+<a rel="nofollow" href="https://www.fosshub.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">FossHub</a></li>
+<a rel="nofollow" href="https://lrepacks.ru/" target="_blank" rel="noopener noreferrer" class="nya-btn">LR</a></li>
+<a rel="nofollow" href="http://www.dayanzai.me/" target="_blank" rel="noopener noreferrer" class="nya-btn">大眼仔</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-envelope-o" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>邮箱</span>
+</legend>
+<a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer" class="nya-btn">Gmail</a></li>
+<a rel="nofollow" href="https://outlook.live.com/mail/" target="_blank" rel="noopener noreferrer" class="nya-btn">Hotmail</a></li>
+<a rel="nofollow" href="https://mail.163.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">网易邮箱</a></li>
+<a rel="nofollow" href="https://mail.sina.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">新浪邮箱</a></li>
+<a rel="nofollow" href="https://mail.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">QQ邮箱</a></li>
+<a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>阿里邮箱</a></li>
+<a rel="nofollow" href="https://exmail.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>腾讯企业邮箱</a></li>
+<a rel="nofollow" href="https://www.linshiyouxiang.net/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>临时邮箱</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-map" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>地图</span>
+</legend>
+<a rel="nofollow" href="https://www.amap.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">高德地图</a></li>
+<a rel="nofollow" href="https://map.baidu.com" target="_blank" rel="noopener noreferrer" class="nya-btn">百度地图</a></li>
+<a rel="nofollow" href="https://map.qq.com" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯地图</a></li>
+<a rel="nofollow" href="https://map.sogou.com" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狗地图</a></li>
+<a rel="nofollow" href="https://ditu.so.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">360地图</a></li>
+<a rel="nofollow" href="https://cn.bing.com/maps" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>必应地图</a></li>
+<a rel="nofollow" href="https://www.google.com/maps/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>谷歌地图</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-shopping-cart" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>购物、快递</span>
+</legend>
+<a rel="nofollow" href="https://www.taobao.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">淘宝</a></li>
+<a rel="nofollow" href="https://www.jd.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">京东</a></li>
+<a rel="nofollow" href="https://www.tmall.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">天猫</a></li>
+<a rel="nofollow" href="https://www.suning.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">苏宁易购</a></li>
+<a rel="nofollow" href="http://mobile.yangkeduo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">拼多多</a></li>
+<a rel="nofollow" href="https://www.vip.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">唯品会</a></li>
+<a rel="nofollow" href="http://www.dangdang.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">当当网</a></li>
+<a rel="nofollow" href="https://www.amazon.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>亚马逊</a></li>
+<a rel="nofollow" href="https://www.mogu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">蘑菇街</a></li>
+<a rel="nofollow" href="https://www.yhd.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">1号店</a></li>
+<a rel="nofollow" href="https://www.kuaidi100.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">快递100</a></li>
+<a rel="nofollow" href="http://www.ems.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">EMS中国邮政</a></li>
+<a rel="nofollow" href="http://www.zto.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>中通快递</a></li>
+<a rel="nofollow" href="http://www.yto.net.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">圆通快递</a></li>
+<a rel="nofollow" href="http://www.yundaex.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">韵达快递</a></li>
+<a rel="nofollow" href="http://www.ttkdex.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>天天快递</a></li>
+<a rel="nofollow" href="http://www.uce.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">优速快递</a></li>
+<a rel="nofollow" href="http://www.qfkd.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">全峰快递</a></li>
+<a rel="nofollow" href="http://www.nd56.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>能达速递</a></li>
+<a rel="nofollow" href="http://www.deppon.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">德邦快递</a></li>
+<a rel="nofollow" href="http://www.800bestex.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百世汇通</a></li>
+<a rel="nofollow" href="http://www.jd-ex.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>京东快递</a></li>
+<a rel="nofollow" href="http://www.sto.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">申通快递</a></li>
+<a rel="nofollow" href="http://www.sf-express.com/cn/sc/" target="_blank" rel="noopener noreferrer" class="nya-btn">顺丰快递</a></li>
+<a rel="nofollow" href="http://www.zjs.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>宅急送</a></li>
+<a rel="nofollow" href="http://www.ane56.com/home/home.jsp" target="_blank" rel="noopener noreferrer" class="nya-btn">安能物流</a></li>
+<a rel="nofollow" href="http://www.bjcs100.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">城市100</a></li>
+<a rel="nofollow" href="http://www.deppon.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>德邦物流</a></li>
+<a rel="nofollow" href="http://www.ztky.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">中铁物流</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-cloud" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>世纪互联、个人网盘、谷歌网盘资源</span>
+</legend>
+<a rel="nofollow" href="https://ceo.qiantigers.workers.dev/" target="_blank" rel="noopener noreferrer" class="nya-btn">世纪互联白嫖1</a></li>
+<a rel="nofollow" href="http://xkx.me/" target="_blank" rel="noopener noreferrer" class="nya-btn">世纪互联白嫖2</a></li>
+<a rel="nofollow" href="http://od.obagg.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">世纪互联白嫖3</a></li>
+<a rel="nofollow" href="https://sky.zjuczs.workers.dev/" target="_blank" rel="noopener noreferrer" class="nya-btn">世纪互联白嫖4</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-gamepad" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>游戏</span>
+</legend>
+<a rel="nofollow" href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="nya-btn">Steam</a></li>
+<a rel="nofollow" href="https://www.epicgames.com/store/zh-CN/" target="_blank" rel="noopener noreferrer" class="nya-btn">Epic</a></li>
+<a href="https://www.gog.com/" rel="noopener noreferrer" class="nya-btn">GOG</a></li>
+<a href="https://www.ubisoft.com.cn/" rel="noopener noreferrer" class="nya-btn">育碧游戏</a></li>
+<a href="https://steamdb.info/" rel="noopener noreferrer" class="nya-btn">SteamDB</a></li>
+<a rel="nofollow" href="https://www.ali213.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">游侠网</a></li>
+<a rel="nofollow" href="https://www.3dmgame.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">3DM</a></li>
+<a rel="nofollow" href="https://igg-games.com" target="_blank" rel="noopener noreferrer" class="nya-btn">igg game</a></li>
+<a rel="nofollow" href="https://www.gamersky.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">游民星空</a></li>
+<a rel="nofollow" href="http://www.kuai8.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">快吧</a></li>
+<a rel="nofollow" href="https://www.xiaoheihe.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">小黑盒</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-laptop" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>系统镜像</span>
+</legend>
+<a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">MSDN</a></li>
+<a rel="nofollow" href="https://ubuntu.com/download" target="_blank" rel="noopener noreferrer" class="nya-btn">Ubuntu</a></li>
+<a href="https://www.kali.org/" rel="noopener noreferrer" class="nya-btn">Kali</a></li>
+<a href="https://manjaro.org/" rel="noopener noreferrer" class="nya-btn">Manjaro</a></li>
+<a href="https://www.deepin.org/" rel="noopener noreferrer" class="nya-btn">Deepin</a></li>
+<a rel="nofollow" href="https://www.centos.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">CentOS</a></li>
+<a rel="nofollow" href="https://www.raspberrypi.org/downloads/" target="_blank" rel="noopener noreferrer" class="nya-btn">Raspberrypi</a></li>
+<a rel="nofollow" href="https://imac.hk/category/macos/" target="_blank" rel="noopener noreferrer" class="nya-btn">黑苹果</a></li>
+<a rel="nofollow" href="https://www.microsoft.com/zh-cn/software-download/" target="_blank" rel="noopener noreferrer" class="nya-btn">Windows</a></li>
+<a rel="nofollow" href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">清华大学镜像</a></li>
+<a rel="nofollow" href="https://mirrors.ustc.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中科大镜像</a></li>
+<a rel="nofollow" href="https://developer.aliyun.com/mirror/" target="_blank" rel="noopener noreferrer" class="nya-btn">阿里云镜像</a></li>
+<a rel="nofollow" href="https://mirrors.huaweicloud.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">华为云镜像</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-thumbs-o-up" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>装机必备</span>
+</legend>
+<a rel="nofollow" href="https://im.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">QQ</a></li>
+<a rel="nofollow" href="https://office.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">TIM</a></li>
+<a rel="nofollow" href="https://pc.weixin.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">微信</a></li>
+<a rel="nofollow" href="https://www.google.cn/intl/zh-CN/chrome/" target="_blank" rel="noopener noreferrer" class="nya-btn">Chrome浏览器</a></li>
+<a rel="nofollow" href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noopener noreferrer" class="nya-btn">Edge浏览器</a></li>
+<a rel="nofollow" href="https://www.mozilla.org/zh-CN/firefox/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>火狐浏览器</a></li>
+<a rel="nofollow" href="https://www.opera.com/zh-cn/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>Opera浏览器</a></li>
+<a rel="nofollow" href="https://browser.360.cn/ee/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>360极速浏览器</a></li>
+<a rel="nofollow" href="http://www.internetdownloadmanager.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>IDM</a></li>
+<a rel="nofollow" href="https://www.freedownloadmanager.org/zh/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>FDM</a></li>
+<a rel="nofollow" href="http://www.xunlei.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>迅雷</a></li>
+<a rel="nofollow" href="https://pc.wps.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">WPS</a></li>
+<a rel="nofollow" href="https://www.office.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Office</a></li>
+<a rel="nofollow" href="https://zh-cn.libreoffice.org/download/download/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>LibreOffice</a></li>
+<a rel="nofollow" href="https://pinyin.sogou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狗输入法</a></li>
+<a rel="nofollow" href="https://www.voidtools.com/zh-cn/downloads/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>Everything</a></li>
+<a rel="nofollow" href="https://www.rarlab.com/download.htm" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>WinRAR</a></li>
+<a rel="nofollow" href="https://www.fosshub.com/7-Zip.html" target="_blank" rel="noopener noreferrer" class="nya-btn">7-Zip</a></li>
+<a rel="nofollow" href="http://www.bandisoft.com/bandizip/" target="_blank" rel="noopener noreferrer" class="nya-btn">Bandizip</a></li>
+<a rel="nofollow" href="https://www.adobe.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Adobe全家桶</a></li>
+<a rel="nofollow" href="http://www.blackmagicdesign.com/cn/products/davinciresolve/" target="_blank" rel="noopener noreferrer" class="nya-btn">达芬奇</a></li>
+<a rel="nofollow" href="https://www.fosshub.com/GIMP.html" target="_blank" rel="noopener noreferrer" class="nya-btn">GIMP</a></li>
+<a rel="nofollow" href="https://music.163.com/#/download" target="_blank" rel="noopener noreferrer" class="nya-btn">网易云音乐</a></li>
+<a rel="nofollow" href="https://y.qq.com/download/download.html" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>QQ音乐</a></li>
+<a rel="nofollow" href="https://www.huorong.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>火绒安全</a></li>
+<a rel="nofollow" href="https://www.360.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>360安全卫士</a></li>
+<a rel="nofollow" href="https://guanjia.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>腾讯管家电脑</a></li>
+<a rel="nofollow" href="https://pc.qq.com/search.html#!keyword=PotPlayer" target="_blank" rel="noopener noreferrer" class="nya-btn">PotPlayer</a></li>
+<a rel="nofollow" href="https://www.videolan.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">VLC</a></li>
+<a rel="nofollow" href="https://player.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">QQ影音</a></li>
+<a rel="nofollow" href="http://www.pcgeshi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">格式工厂</a></li>
+<a rel="nofollow" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Vscode</a></li>
+<a rel="nofollow" href="https://www.teamviewer.cn/cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Teamviewer</a></li>
+<a rel="nofollow" href="https://sunlogin.oray.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">向日葵</a></li>
+<a rel="nofollow" href="https://www.todesk.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">ToDesk</a></li>
+<a rel="nofollow" href="https://www.vmware.com/cn/products/workstation-player/workstation-player-evaluation.html" target="_blank" rel="noopener noreferrer" class="nya-btn">VMware</a></li>
+<a rel="nofollow" href="https://rufus.ie/" target="_blank" rel="noopener noreferrer" class="nya-btn">Rufus</a></li>
+<a rel="nofollow" href="http://www.kbtool.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">卡硬工具箱</a></li>
+<a rel="nofollow" href="https://zh.snipaste.com/download.html" target="_blank" rel="noopener noreferrer" class="nya-btn">Snipaste</a></li>
+<a rel="nofollow" href="https://geekuninstaller.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Geek Uninstaller</a></li>
+<a rel="nofollow" href="https://www.xmind.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Xmind</a></li>
+<a rel="nofollow" href="https://www.mindmanager.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">MindManager</a></li>
+<a rel="nofollow" href="https://www.diagrams.net/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>Diagrams</a></li>
+<a rel="nofollow" href="https://www.typora.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">Typora</a></li>
+<a rel="nofollow" href="https://obsproject.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">OBS</a></li>
+<a rel="nofollow" href="https://www.bandicam.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">bandicam</a></li>、
+<a rel="nofollow" href="https://zh.snipaste.com/download.html" target="_blank" rel="noopener noreferrer" class="nya-btn">Thunderbird</a></li>
+<a rel="nofollow" href="http://www.chuyu.me/zh-Hans/index.html" target="_blank" rel="noopener noreferrer" class="nya-btn">Dism++</a></li>
+<a rel="nofollow" href="https://mail.163.com/dashi/" target="_blank" rel="noopener noreferrer" class="nya-btn">网易邮箱大师</a></li>
+<a rel="nofollow" href="https://www.thunderbird.net/zh-CN/" target="_blank" rel="noopener noreferrer" class="nya-btn">Thunderbird</a></li>
+<a rel="nofollow" href="https://molunerfinn.com/PicGo//" target="_blank" rel="noopener noreferrer" class="nya-btn">PicGo</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-picture-o" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>设计、视觉、图片</span>
+</legend>
+<a rel="nofollow" href="https://www.pixiv.com" target="_blank" rel="noopener noreferrer" class="nya-btn">Pixiv</a></li>
+<a rel="nofollow" href="https://www.dribbble.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Dribbble</a></li>
+<a rel="nofollow" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Pinterest</a></li>
+<a rel="nofollow" href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Behance</a></li>
+<a rel="nofollow" href="https://www.hippopx.com/zh" target="_blank" rel="noopener noreferrer" class="nya-btn">Hippopx</a></li>
+<a rel="nofollow" href="https://www.iconfinder.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">IconFinder</a></li>
+<a rel="nofollow" href="https://undraw.co/illustrations" target="_blank" rel="noopener noreferrer" class="nya-btn">Undraw</a></li>
+<a rel="nofollow" href="https://coolbackgrounds.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">酷背景</a></li>
+<a rel="nofollow" href="https://shapefactory.co/" target="_blank" rel="noopener noreferrer" class="nya-btn">ShapeFactory</a></li>
+<a rel="nofollow" href="https://colorhunt.co/" target="_blank" rel="noopener noreferrer" class="nya-btn">Colorhunt</a></li>
+<a rel="nofollow" href="https://colordrop.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">Colordrop</a></li>
+<a rel="nofollow" href="http://zhongguose.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">中国色</a></li>
+<a rel="nofollow" href="https://www.stickpng.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Stickpng</a></li>
+<a rel="nofollow" href="https://www.stickpng.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Stickpng</a></li>
+<a rel="nofollow" href="https://www.toptal.com/designers/subtlepatterns/" target="_blank" rel="noopener noreferrer" class="nya-btn">纹理背景</a></li>
+<a rel="nofollow" href="https://huaban.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">花瓣</a></li>
+<a rel="nofollow" href="https://ui.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">UI中国</a></li>
+<a rel="nofollow" href="https://www.logoko.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">标点狗</a></li>
+<a rel="nofollow" href="https://www.zcool.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">站酷</a></li>
+<a rel="nofollow" href="https://www.iconfont.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">阿里图标</a></li>
+<a rel="nofollow" href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Flaticon/</a></li>
+<a rel="nofollow" href="https://ionicons.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Ionicons</a></li>
+<a rel="nofollow" href="https://material.io/tools/icons/" target="_blank" rel="noopener noreferrer" class="nya-btn">Material icons</a></li>
+<a rel="nofollow" href="https://www.easyicon.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Easyicon</a></li>
+<a rel="nofollow" href="https://www.uisdc.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">优设</a></li>
+<a rel="nofollow" href="https://www.91sotu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜图</a></li>
+<a rel="nofollow" href="https://www.remove.bg/" target="_blank" rel="noopener noreferrer" class="nya-btn">扣图</a></li>
+<a rel="nofollow" href="https://image.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度图片</a></li>
+<a rel="nofollow" href="https://pic.sogou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狗图片</a></li>
+<a rel="nofollow" href="https://cn.bing.com/images/" target="_blank" rel="noopener noreferrer" class="nya-btn">必应图片</a></li>
+<a rel="nofollow" href="https://image.so.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">360图片</a></li>
+<a rel="nofollow" href="https://www.google.com/imghp" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌图片</a></li>
+<a rel="nofollow" href="https://yandex.com/images/" target="_blank" rel="noopener noreferrer" class="nya-btn">Yandex图片</a></li>
+<a rel="nofollow" href="https://iqdb.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">iqdb</a></li>
+<a rel="nofollow" href="https://saucenao.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">SauceNAO</a></li>
+<a rel="nofollow" href="https://ascii2d.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">二次元图片搜索</a></li>
+<a rel="nofollow" href="https://trace.moe/" target="_blank" rel="noopener noreferrer" class="nya-btn">What Anime</a></li>
+<a rel="nofollow" href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Tinypng</a></li>
+<a rel="nofollow" href="https://www.onlineocr.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">OCR文字识别</a></li>
+<a rel="nofollow" href="https://www.zhaoxi.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线做图</a></li>
+<a rel="nofollow" href="https://xiuxiu.web.meitu.com/main.html" target="_blank" rel="noopener noreferrer" class="nya-btn">美图秀秀网页版</a></li>
+<a rel="nofollow" href="https://htmlcolorcodes.com/zh/" target="_blank" rel="noopener noreferrer" class="nya-btn">HTML取色</a></li>
+<a rel="nofollow" href="https://www.yasuotu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">图片压缩</a></li>
+<a href="https://squoosh.app/" rel="noopener noreferrer" class="nya-btn">Squoosh</a></li>
+<a rel="nofollow" href="https://wallroom.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">4K壁纸</a></li>
+<a rel="nofollow" href="https://rog.asus.com/wallpapers/" target="_blank" rel="noopener noreferrer" class="nya-btn">ROG壁纸</a></li>
+<a rel="nofollow" href="https://alphacoders.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Alpha Coders</a></li>
+<a rel="nofollow" href="https://neumorphism.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">新拟态设计</a></li>
+<a rel="nofollow" href="http://www.yeelogo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">LOGO制作</a></li>
+<a rel="nofollow" href="https://www.qt86.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">QT86</a></li>
+<a href="http://www.68design.net/cool/" rel="noopener noreferrer" class="nya-btn">68Design</a></li>
+<a href="https://animista.net/" rel="noopener noreferrer" class="nya-btn">Animista</a></li>
+<a href="http://asciiflow.com/" rel="noopener noreferrer" class="nya-btn">ASCIIFlow Infinity</a></li>
+<a href="https://bellwoods.xyz/" rel="noopener noreferrer" class="nya-btn">bellwoods</a></li>
+<a href="https://ibaotu.com/" rel="noopener noreferrer" class="nya-btn">包图网</a></li>
+<a href="http://logonc.com/" rel="noopener noreferrer" class="nya-btn">藏标网</a></li>
+<a href="https://www.58pic.com//" rel="noopener noreferrer" class="nya-btn">千图网</a></li>
+<a href="https://mybrandnewlogo.com/ja/logo-maker" rel="noopener noreferrer" class="nya-btn">My Brand New Logo</a></li>
+<a href="https://www.gaoding.com/" rel="noopener noreferrer" class="nya-btn">稿定设计</a></li>
+<a href="https://www.canva.com/" rel="noopener noreferrer" class="nya-btn">Canva</a></li>
+<a href="https://818ps.com/" rel="noopener noreferrer" class="nya-btn">图怪兽</a></li>
+<a href="https://www.fotor.com.cn/" rel="noopener noreferrer" class="nya-btn">Fotor懒设计</a></li>
+<a rel="nofollow" href="https://www.chuangkit.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">创客贴</a></li>
+<a href="https://www.iloveimg.com/zh-cn" rel="noopener noreferrer" class="nya-btn">iloveimg</a></li>
+<a href="https://www.watermark.ws/" rel="noopener noreferrer" class="nya-btn">Watermark</a></li>
+<a href="https://wallhaven.cc/" rel="noopener noreferrer" class="nya-btn">Wallhaven</a></li>
+<a rel="nofollow" href="https://zh.pickfrom.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Pickfrom</a>
+<a rel="nofollow" href="https://www.tutieshi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">GIF编辑</a></li>
+<a href="https://www.dpm.org.cn/lights/royal.html" rel="noopener noreferrer" class="nya-btn">故宫壁纸</a></li>
+<a href="http://www.obzhi.com/" rel="noopener noreferrer" class="nya-btn">乌云高清壁纸</a></li>
+<a href="http://netbian.com/" rel="noopener noreferrer" class="nya-btn">彼岸壁纸</a></li>
+<a href="https://www.enterdesk.com/" rel="noopener noreferrer" class="nya-btn">回车桌面壁纸</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-futbol-o" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>有趣、新奇</span>
+</legend>
+<a rel="nofollow" href="https://www.ipaperclip.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">回形针手册</a></li>
+<a rel="nofollow" href="https://www.allhistory.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">全历史</a></li>
+<a href="https://www.wanweibaike.com//" rel="noopener noreferrer" class="nya-btn">万维百科</a></li>
+<a rel="nofollow" href="https://www.msdmanuals.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">默沙东诊疗手册</a></li>
+<a rel="nofollow" href="https://topbook.cc/" target="_blank" rel="noopener noreferrer" class="nya-btn">Topbook</a></li>
+<a rel="nofollow" href="https://zh.wikihow.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">WikiHow</a></li>
+<a rel="nofollow" href="http://www.ltfc.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">中华珍宝馆</a></li>
+<a rel="nofollow" href="https://www.cdstm.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中国数字科技馆</a></li>
+<a href="http://www.nlc.cn" rel="noopener noreferrer" class="nya-btn">中国国家图书馆</a></li>
+<a rel="nofollow" href="https://www.mvyxws.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">医学微视</a></li>
+<a rel="nofollow" href="https://www.zhijianshang.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">指尖上</a></li>
+<a rel="nofollow" href="https://720yun.com/channel" target="_blank" rel="noopener noreferrer" class="nya-btn">720Yun</a></li>
+<a href="https://www.utovr.com/AirPano/" rel="noopener noreferrer" class="nya-btn">AirPano</a></li>
+<a rel="nofollow" href="https://www.skypixel.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">天空之城</a></li>
+<a rel="nofollow" href="https://cybermap.kaspersky.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">全球网络攻击地图</a></li>
+<a rel="nofollow" href="https://earth.nullschool.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">天气可视化预测</a></li>
+<a rel="nofollow" href="https://zoom.earth/" target="_blank" rel="noopener noreferrer" class="nya-btn">Zoom Earth </a></li>
+<a rel="nofollow" href="https://www.autopiano.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">自由钢琴</a></li>
+<a rel="nofollow" href="http://www.guimp.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">最小网站</a></li>
+<a rel="nofollow" href="https://worlds-highest-website.com/zh/" target="_blank" rel="noopener noreferrer" class="nya-btn">最高网页</a></li>
+<a rel="nofollow" href="http://thedeepestsite.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">最深网站</a></li>
+<a rel="nofollow" href="http://geektyper.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">秒变黑客</a></li>
+<a rel="nofollow" href="https://gcemetery.co/" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌产品墓地</a></li>
+<a rel="nofollow" href="https://aidn.jp/mikutap/" target="_blank" rel="noopener noreferrer" class="nya-btn">Mikutab</a></li>
+<a rel="nofollow" href="http://iamthecu.be/" target="_blank" rel="noopener noreferrer" class="nya-btn">魔方</a></li>
+<a rel="nofollow" href="https://code2048.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">神秘的程序员们</a></li>
+<a rel="nofollow" href="https://archive.org/web/" target="_blank" rel="noopener noreferrer" class="nya-btn">Archive</a></li>
+<a rel="nofollow" href="https://www.reg007.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">REG007</a></li>
+<a rel="nofollow" href="http://www.windows93.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Windows93</a></li>
+<a rel="nofollow" href="http://www.staggeringbeauty.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">一只怪家伙</a></li>
+<a rel="nofollow" href="https://stars.chromeexperiments.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">100,000 Stars</a></li>
+<a rel="nofollow" href="http://webapp.vizen.cn/gugong_app_pc/index.html" target="_blank" rel="noopener noreferrer" class="nya-btn">全景故宫</a></li>
+<a rel="nofollow" href="https://www.aizhezhi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱折纸</a></li>
+<a rel="nofollow" href="https://jikipedia.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">小鸡词典</a></li>
+<a rel="nofollow" href="https://nathanfriend.io/inspirograph/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线万花尺</a></li>
+<a rel="nofollow" href="https://suulnnka.github.io/BullshitGenerator/" target="_blank" rel="noopener noreferrer" class="nya-btn">狗屁不通文章生成</a></li>
+<a rel="nofollow" href="https://chp.shadiao.app/" target="_blank" rel="noopener noreferrer" class="nya-btn">彩虹屁生成</a></li>
+<a rel="nofollow" href="https://www.nihaowua.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">你好污啊</a></li>
+<a rel="nofollow" href="http://fakeupdate.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Windows升级</a></li>
+<a rel="nofollow" href="https://taiko.bui.pm/" target="_blank" rel="noopener noreferrer" class="nya-btn">太鼓达人</a></li>
+<a rel="nofollow" href="http://p.timepill.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">时间胶囊</a></li>
+<a rel="nofollow" href="http://www.ilidilid.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">ilidilid.com</a></li>
+<a rel="nofollow" href="http://huangenet.gitee.io/dino3d/" target="_blank" rel="noopener noreferrer" class="nya-btn">3D小恐龙</a></li>
+<a rel="nofollow" href="https://m.niucodata.com/cat/cat.php" target="_blank" rel="noopener noreferrer" class="nya-btn">在线听猫咪打呼噜</a></li>
+<a rel="nofollow" href="https://www.buttsss.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Buttsss</a></li>
+<a rel="nofollow" href="tools/hacker/index.html" target="_blank" rel="noopener noreferrer" class="nya-btn">Hacker</a></li>
+<a rel="nofollow" href="tools/xkdlts" target="_blank" rel="noopener noreferrer" class="nya-btn">小蝌蚪聊天室</a></li>
+<a rel="nofollow" href="tools/baidu" target="_blank" rel="noopener noreferrer" class="nya-btn">让我帮你百度一下</a></li>
+<a rel="nofollow" href="tools/ygdbns" target="_blank" rel="noopener noreferrer" class="nya-btn">一个都不能死</a></li>
+<a rel="nofollow" href="https://www.yikm.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">小霸王</a></li>
+<a rel="nofollow" href="http://aidn.jp/tetomomowarp/" target="_blank" rel="noopener noreferrer" class="nya-btn">电音萝莉</a></li>
+<a rel="nofollow" href="tools/dino" target="_blank" rel="noopener noreferrer" class="nya-btn">Dino小恐龙</a></li>
+<a rel="nofollow" href="tools/plane" target="_blank" rel="noopener noreferrer" class="nya-btn">PlaneWars</a></li>
+<a rel="nofollow" href="tools/moefood/index.html" target="_blank" rel="noopener noreferrer" class="nya-btn">MoeFood</a></li>
+<a rel="nofollow" href="tools/scare/index.html" target="_blank" rel="noopener noreferrer" class="nya-btn">Scare</a></li>
+<a href="tools/qingke" rel="noopener noreferrer" class="nya-btn">轻刻记忆</a></li>
+<a href="tools/migong" rel="noopener noreferrer" class="nya-btn">迷宫</a></li>
+<a href="tools/tools/sh" rel="noopener noreferrer" class="nya-btn">视幻</a></li>
+<a href="tools/3dzqb" rel="noopener noreferrer" class="nya-btn">3D元素周期表</a></li>
+<a href="tools/time" rel="noopener noreferrer" class="nya-btn">罗盘时钟</a></li>
+<a href="tools/yanhua" rel="noopener noreferrer" class="nya-btn">烟花模拟器 </a></li>
+<a href="tools/tiangou/" rel="noopener noreferrer" class="nya-btn">舔狗日记</a></li>
+<a href="tools/dujitang" rel="noopener noreferrer" class="nya-btn">毒鸡汤</a></li>
+<a href="http://www.cbaigui.com/" rel="noopener noreferrer" class="nya-btn">中国妖怪百集</a></li>
+<a href="https://www.wesight.com.cn/" rel="noopener noreferrer" class="nya-btn">Wesight</a></li>
+<a href="https://www.oceanwaves.io/" rel="noopener noreferrer" class="nya-btn">在线音乐创作</a></li>
+<a href="https://cmd.to/help" rel="noopener noreferrer" class="nya-btn">互联网控制台</a></li>
+<a href="http://cx.luxunmuseum.com.cn/" rel="noopener noreferrer" class="nya-btn">鲁迅发言查询</a></li>
+<a href="http://www.species-in-pieces.com/" rel="noopener noreferrer" class="nya-btn">PIECES 拼图</a></li>
+<a href="https://pissang.github.io/voxelize-image/" rel="noopener noreferrer" class="nya-btn">图片立体像素画</a></li>
+<a href="http://dict.ftqq.com/" rel="noopener noreferrer" class="nya-btn">福利单词</a></li>
+<a href="https://thispersondoesnotexist.com/" rel="noopener noreferrer" class="nya-btn">查无此人</a></li>
+<a href="hhttps://lovelive.tools/" rel="noopener noreferrer" class="nya-btn">渣男</a></li>
+<a href="http://www.termonline.cn/" rel="noopener noreferrer" class="nya-btn">术语在线</a></li>
+<a href="tools/zuosi" rel="noopener noreferrer" class="nya-btn">作死网页</a></li>
+<a href="https://www.zhuangbi.info/" rel="noopener noreferrer" class="nya-btn">装逼大全</a></li>
+<a href="https://10why.net/" rel="noopener noreferrer" class="nya-btn">十万个为什么</a></li>
+<a href="https://www.hacked.com.cn/" rel="noopener noreferrer" class="nya-btn">全球被黑网站统计系统</a></li>
+<a rel="nofollow" href="https://pyq.shadiao.app/" target="_blank" rel="noopener noreferrer" class="nya-btn">朋友圈文案生成器</a></li>
+<a rel="nofollow" href="https://class.acagrid.com/pc/comment" target="_blank" rel="noopener noreferrer" class="nya-btn">老师批语生成</a></li>
+<a rel="nofollow" href="https://gate.ofo.moe/" target="_blank" rel="noopener noreferrer" class="nya-btn">网站任意门</a></li>
+<a rel="nofollow" href="https://cc.bjadjty.com/cx3/2498/" target="_blank" rel="noopener noreferrer" class="nya-btn">王者排名生成</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-eye" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span> 学习、教程、涨知识</span>
+</legend>
+<a rel="nofollow" href="https://www.icourse163.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">中国大学MOOC</a></li>
+<a rel="nofollow" href="https://open.163.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">网易公开课</a></li>
+<a rel="nofollow" href="https://ke.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯课堂</a></li>
+<a rel="nofollow" href="http://i.chaoxing.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">超星学习通</a></li>
+<a rel="nofollow" href="https://www.imooc.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">慕课网</a></li>
+<a rel="nofollow" href="https://study.163.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">网易云课堂</a></li>
+<a rel="nofollow" href="https://www.51zxw.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">我要自学网</a></li>
+<a rel="nofollow" href="http://oeasy.org/l" target="_blank" rel="noopener noreferrer" class="nya-btn">oeasy</a></li>
+<a rel="nofollow" href="http://www.dxzy163.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">大学资源网</a></li>
+<a rel="nofollow" href="https://www.ted.com/talks/" target="_blank" rel="noopener noreferrer" class="nya-btn">TED</a></li>
+<a rel="nofollow" href="https://gfsoso.99lb.net/scholar.html" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌学术</a></li>
+<a rel="nofollow" href="https://www.cnki.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">中国知网</a></li>
+<a rel="nofollow" href="https://www.yxgapp.com/open-courses/" target="_blank" rel="noopener noreferrer" class="nya-btn">译学馆</a></li>
+<a rel="nofollow" href="http://www.icourses.cn/home/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱课程</a></li>
+<a rel="nofollow" href="https://www.doyoudo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Doyoudo</a></li>
+<a rel="nofollow" href="https://ilovefishc.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">鱼C工作室</a></li>
+<a rel="nofollow" href="https://www.php.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">PHP中文网</a></li>
+<a rel="nofollow" href="https://zh.numberempire.com/equationsolver.php" target="_blank" rel="noopener noreferrer" class="nya-btn">方程求解</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-graduation-cap" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>大学、学院</span>
+</legend>
+<a rel="nofollow" href="https://www.tsinghua.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">清华大学</a></li>
+<a rel="nofollow" href="https://www.pku.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">北京大学</a></li>
+<a rel="nofollow" href="https://www.ustc.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中国科技大学</a></li>
+<a rel="nofollow" href="http://www.zju.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">浙江大学</a></li>
+<a rel="nofollow" href="https://www.fudan.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">复旦大学</a></li>
+<a rel="nofollow" href="https://www.ruc.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中国人民大学</a></li>
+<a rel="nofollow" href="https://www.harvard.edu/" target="_blank" rel="noopener noreferrer" class="nya-btn">哈佛大学</a></li>
+<a rel="nofollow" href="http://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>牛津大学</a></li>
+<a rel="nofollow" href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer" class="nya-btn">麻省理工学院</a></li>
+<a rel="nofollow" href="https://www.stanford.edu/" target="_blank" rel="noopener noreferrer" class="nya-btn">斯坦福大学</a></li>
+<a rel="nofollow" href="https://www.waseda.jp/" target="_blank" rel="noopener noreferrer" class="nya-btn"></i>早稻田大学</a></li>
+<a rel="nofollow" href="https://www.cam.ac.uk/" target="_blank" rel="noopener noreferrer" class="nya-btn">剑桥大学</a></li>
+<a rel="nofollow" href="http://www.nuc.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中北大学</a></li>
+<a rel="nofollow" href="http://www.ibcnuc.edu.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中北信商</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-mobile" aria-hidden="true"></i>
+<span>手机、数码</span>
+</legend>
+<a rel="nofollow" href="https://www.apple.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Apple</a></li>
+<a rel="nofollow" href="https://consumer.huawei.com/cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">华为</a></li>
+<a rel="nofollow" href="https://www.mi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">小米</a></li>
+<a rel="nofollow" href="https://www.oppo.com/cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">OPPO</a></li>
+<a rel="nofollow" href="http://www.vivo.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Vivo</a></li>
+<a rel="nofollow" href="https://www.oneplus.com/cn" target="_blank" rel="noopener noreferrer" class="nya-btn">一加</a></li>
+<a rel="nofollow" href="https://www.smartisan.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">锤子</a></li>
+<a rel="nofollow" href="https://www.samsung.com/cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">三星</a></li>
+<a rel="nofollow" href="https://meizu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">魅族</a></li>
+<a rel="nofollow" href="http://www.zol.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中关村在线</a></li>
+<a rel="nofollow" href="https://www.pconline.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">太平洋电脑网</a></li>
+<a rel="nofollow" href="https://www.ithome.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">IT之家</a></li>
+<a rel="nofollow" href="https://www.zealer.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">ZEALER</a></li>
+<a rel="nofollow" href="https://www.dgtle.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">数字尾巴</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-fighter-jet" aria-hidden="true"></i>
+<span>体育、军事</span>
+</legend>
+<a rel="nofollow" href="http://www.ppsport.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">PP体育</a></li>
+<a rel="nofollow" href="https://china.nba.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">NBA</a></li>
+<a rel="nofollow" href="https://sports.163.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">网易体育</a></li>
+<a rel="nofollow" href="https://www.zhibo8.cc/" target="_blank" rel="noopener noreferrer" class="nya-btn">直播8</a></li>
+<a rel="nofollow" href="https://www.hupu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">虎扑</a></li>
+<a rel="nofollow" href="http://sports.sina.com.cn//" target="_blank" rel="noopener noreferrer" class="nya-btn">新浪体育</a></li>
+<a rel="nofollow" href="https://sports.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯体育</a></li>
+<a rel="nofollow" href="https://sports.sohu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狐体育</a></li>
+<a rel="nofollow" href="https://mil.eastday.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">军事头条</a></li>
+<a rel="nofollow" href="http://military.china.com//" target="_blank" rel="noopener noreferrer" class="nya-btn">中华网军事</a></li>
+<a rel="nofollow" href="https://www.tiexue.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">铁血网</a></li>
+<a rel="nofollow" href="https://new.qq.com/ch/milite/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯军事</a></li>
+<a rel="nofollow" href="http://www.miercn.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">米尔网</a></li>
+<a rel="nofollow" href="https://mil.news.sina.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">新浪军事</a></li>
+<a rel="nofollow" href="https://mil.huanqiu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">环球军事</a></li>
+<a rel="nofollow" href="https://mil.ifeng.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">凤凰军事</a></li>
+<a rel="nofollow" href="http://www.81.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">中国军网</a></li>
+<a rel="nofollow" href="http://military.people.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">人民军事</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-link" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>网址导航、主页</span>
+</legend>
+<a rel="nofollow" href="https://ailongmiao.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">龙喵网</a></li>
+<a rel="nofollow" href="https://www.jianfast.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">简法主页</a></li>
+<a href="http://lackk.com/nav/" rel="noopener noreferrer" class="nya-btn">兰客导航</a></li>
+<a rel="nofollow" href="http://ilxdh.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">龙轩导航</a></li>
+<a rel="nofollow" href="http://guozhivip.com/nav/" target="_blank" rel="noopener noreferrer" class="nya-btn">果汁导航</a></li>
+<a rel="nofollow" href="https://wukandy.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">柠芒集导航</a></li>
+<a rel="nofollow" href="https://www.bidianer.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">笔点导航</a></li>
+<a rel="nofollow" href="https://orxing.top/nav/" target="_blank" rel="noopener noreferrer" class="nya-btn">不思议导航</a></li>
+<a rel="nofollow" href="http://www.gitnavi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">GitNavi</a></li>
+<a rel="nofollow" href="https://adzhp.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱达杂货铺</a></li>
+<a rel="nofollow" href="https://www.zhansousou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">站搜搜导航</a></li>
+<a rel="nofollow" href="https://www.daoall.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">导哦</a></li>
+<a rel="nofollow" href="https://www.moulem.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">某柠檬</a></li>
+<a rel="nofollow" href="https://webjike.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">小呆导航</a></li>
+<a rel="nofollow" href="https://www.91sotu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜图导航</a></li>
+<a rel="nofollow" href="https://web.geekji.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">钛导航</a></li>
+<a rel="nofollow" href="https://www.24kdh.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">24K</a></li>
+<a rel="nofollow" href="https://touduyu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">偷渡鱼</a></li>
+<a rel="nofollow" href="http://lxqnsys.com/d/" target="_blank" rel="noopener noreferrer" class="nya-btn">五花八门</a></li>
+<a rel="nofollow" href="https://shouku123.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">收库123</a></li>
+<a rel="nofollow" href="https://wht.im/" target="_blank" rel="noopener noreferrer" class="nya-btn">万花筒</a></li>
+<a rel="nofollow" href="http://byr.wiki/" target="_blank" rel="noopener noreferrer" class="nya-btn">北邮人</a></li>
+<a rel="nofollow" href="http://lackar.com/aa/" target="_blank" rel="noopener noreferrer" class="nya-btn">AnywhereAnything</a></li>
+<a rel="nofollow" href="http://www.xiaolvji.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">效率集</a></li>
+<a rel="nofollow" href="https://www.jianavi.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">简约导航</a></li>
+<a rel="nofollow" href="https://kim.plopco.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">KIM主页</a></li>
+<a rel="nofollow" href="https://dama.lu/" target="_blank" rel="noopener noreferrer" class="nya-btn">大马路</a></li>
+<a rel="nofollow" href="https://www.chaidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">柴都导航</a></li>
+<a rel="nofollow" href="https://search.chongbuluo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">快搜</a></li>
+<a rel="nofollow" href="https://fulck.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">fulck</a></li>
+<a rel="nofollow" href="https://www.volf.club" target="_blank" rel="noopener noreferrer" class="nya-btn">狼牌工作网址导航</a></li>
+<a rel="nofollow" href="http://511get.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">551导航</a></li>
+<a rel="nofollow" href="https://xydh.fun/" target="_blank" rel="noopener noreferrer" class="nya-btn">炫猿导航</a></li>
+<a rel="nofollow" href="http://1nami.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">1纳米学习</a></li>
+<a rel="nofollow" href="https://bigezhang.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">比格张</a></li>
+<a rel="nofollow" href="https://www.seeseed.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">SeeSeed</a></li>
+<a rel="nofollow" href="https://cn.infinitynewtab.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Infinity新标签页</a></li>
+<a rel="nofollow" href="https://www.monknow.com/zh-CN" target="_blank" rel="noopener noreferrer" class="nya-btn">MONKNOW新标签页</a></li>
+<a rel="nofollow" href="https://5iux.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">简单搜索</a></li>
+<a rel="nofollow" href="https://a.maorx.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">青柠起始页</a></li>
+<a rel="nofollow" href="https://go.wumings.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">onego网盘导航</a></li>
+<a rel="nofollow" href="http://kyon945.ys168.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">阿虚同学的储物间</a></li>
+<a rel="nofollow" href="https://liumingye.github.io/quarkHomePage/" target="_blank" rel="noopener noreferrer" class="nya-btn">仿夸克</a></li> 
+<a rel="nofollow" href="https://zhuye.red/" target="_blank" rel="noopener noreferrer" class="nya-btn">ZHUYE.RED</a></li>
+<a rel="nofollow" href="http://berry.imdo.co/" target="_blank" rel="noopener noreferrer" class="nya-btn">BerryIndex</a></li>
+<a rel="nofollow" href="https://m.baidu.com/?pu=sz%401321_480&wpo=btmfast" target="_blank" rel="noopener noreferrer" class="nya-btn">百度简洁</a></li>
+<a rel="nofollow" href="http://www.orgloft.com/page/search/" target="_blank" rel="noopener noreferrer" class="nya-btn">一个导航</a></li>
+<a rel="nofollow" href="https://www.heji.ltd/" target="_blank" rel="noopener noreferrer" class="nya-btn">合集网</a></li>
+<a rel="nofollow" href="https://ujuji.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">优聚集</a></li>
+<a rel="nofollow" href="https://so.cuiuc.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">极简导航</a></li>
+<a rel="nofollow" href="https://www.xiacoo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">虾酷导航</a></li>
+<a rel="nofollow" href="http://www.xinshe666.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">新设主页</a></li>
+<a rel="nofollow" href="https://doc.bqrdh.com" target="_blank" rel="noopener noreferrer" class="nya-btn">不求人导航@文档</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-code" rel="noopener noreferrer" class="nya-btn"></i>
+<span>开发者</span>
+</legend>
+<a rel="nofollow" href="https://cloudstudio.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Cloud Studio</a></li>
+<a rel="nofollow" href="http://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">W3school</a></li>
+<a rel="nofollow" href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">菜鸟教程</a></li>
+<a rel="nofollow" href="http://codingdict.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">编程字典</a></li>
+<a rel="nofollow" href="http://www.love2.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">Love2</a></li>
+<a rel="nofollow" href="https://www.shiyanlou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">实验楼</a></li>
+<a rel="nofollow" href="https://python123.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">Python123</a></li>
+<a rel="nofollow" href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Github</a></li>
+<a rel="nofollow" href="https://gitee.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Gitee</a></li>
+<a rel="nofollow" href="https://coding.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">Coding</a></li>
+<a rel="nofollow" href="https://codepen.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">Codepen</a></li>
+<a rel="nofollow" href="https://cdnjs.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">CdnJs</a></li>
+<a rel="nofollow" href="https://www.jsdelivr.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Jsdelivr</a></li>
+<a rel="nofollow" href="https://fontawesome.com/icons?d=gallery&amp;m=free" target="_blank" rel="noopener noreferrer" class="nya-btn">Font Awesome</a></li>
+<a rel="nofollow" href="http://www.fontawesome.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Font Awesome中文网</a></li>
+<a rel="nofollow" href="https://dash.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">CFcdn</a></li>
+<a rel="nofollow" href="http://cdn.bnxb.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">CF-Partner1</a></li>
+<a rel="nofollow" href="https://cdn.wzfou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">CF-Partner2</a></li>
+<a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Swiper</a></li>
+<a rel="nofollow" href="http://www.net2ftp.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">在线FTP</a></li>
+<a rel="nofollow" href="https://www.17ce.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">17CE</a></li>
+<a rel="nofollow" href="https://www.boce.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">BOCE</a></li>
+<a rel="nofollow" href="https://www.aliyun.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">阿里云</a></li>
+<a rel="nofollow" href="https://cloud.tencent.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯云</a></li>
+<a rel="nofollow" href="https://cloud.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度云</a></li>
+<a rel="nofollow" href="https://www.ksyun.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">金山云</a></li>
+<a rel="nofollow" href="https://www.huaweicloud.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">华为云</a></li>
+<a rel="nofollow" href="http://tool.chinaz.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">站长工具</a></li>
+<a rel="nofollow" href="https://www.aizhan.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱站网</a></li>
+<a rel="nofollow" href="http://www.alexa.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">Alexa中文网</a></li>
+<a rel="nofollow" href="https://ziyuan.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度搜索资源平台</a></li>
+<a rel="nofollow" href="http://zhanzhang.sogou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狗站长平台</a></li>
+<a rel="nofollow" href="https://www.bing.com/webmaster/" target="_blank" rel="noopener noreferrer" class="nya-btn">Bing站长平台</a></li>
+<a rel="nofollow" href="https://zhanzhang.toutiao.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">头条搜索站长平台</a></li>
+<a rel="nofollow" href="http://zhanzhang.so.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">360站长平台</a></li>
+<a rel="nofollow" href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer" class="nya-btn">Google站长平台</a></li>
+<a rel="nofollow" href="https://www.51.la/" target="_blank" rel="noopener noreferrer" class="nya-btn">51LA</a></li>
+<a rel="nofollow" href="https://tongji.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度统计</a></li>
+<a rel="nofollow" href="https://www.umeng.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">友盟</a></li>
+<a rel="nofollow" href="https://analytics.google.com/analytics/web/" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌统计</a></li>
+<a rel="nofollow" href="https://www.xml-sitemaps.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">SiteMap生成</a></li>
+<a rel="nofollow" href="https://zeit.co/" target="_blank" rel="noopener noreferrer" class="nya-btn">ZEIT</a></li>
+<a rel="nofollow" href="https://carbon.now.sh/" target="_blank" rel="noopener noreferrer" class="nya-btn">代码截图工具</a></li>
+<a rel="nofollow" href="https://www.natfrp.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">SAKURA FRP</a></li>
+<a rel="nofollow" href="https://pypi.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">PYPI</a></li>
+<a rel="nofollow" href="https://dcloud.net.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">DCloud</a></li>
+<a rel="nofollow" href="https://packagecloud.io/" target="_blank" rel="noopener noreferrer" class="nya-btn">PackageCloud</a></li>
+<a rel="nofollow" href="https://github.com.cnpmjs.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">Github镜像1</a></li>
+<a rel="nofollow" href="https://hub.fastgit.org/" target="_blank" rel="noopener noreferrer" class="nya-btn">Github镜像2</a></li>
+<a rel="nofollow" href="https://gh.api.99988866.xyz/" target="_blank" rel="noopener noreferrer" class="nya-btn">GitHub文件加速1</a></li>
+<a rel="nofollow" href="https://g.ioiox.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">GitHub文件加速2</a></li>
+<a rel="nofollow" href="http://toolwa.com/github/" target="_blank" rel="noopener noreferrer" class="nya-btn">Github 加速下载</a></li>
+<a href="https://freessl.cn/" rel="noopener noreferrer" class="nya-btn">FreeSSL</a></li>
+<a href="https://certmall.trustauth.cn/Free" rel="noopener noreferrer" class="nya-btn">免费SSL</a></li>
+<a href="https://myssl.com/" rel="noopener noreferrer" class="nya-btn">MySSL</a></li>
+<a href="https://namebeta.com/" rel="noopener noreferrer" class="nya-btn">NameBeta</a></li>
+<a href="http://screensiz.es/" rel="noopener noreferrer" class="nya-btn">Screen Sizes</a></li>
+<a href="https://shields.io/" rel="noopener noreferrer" class="nya-btn">ShieldsIO</a></li>
+<a href="https://tool.oschina.net/apidocs" rel="noopener noreferrer" class="nya-btn">在线API文档</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-television" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>自媒体、办公</span>
+</legend>
+<a rel="nofollow" href="https://mp.weixin.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">微信公众平台</a></li>
+<a href="https://baijiahao.baidu.com/" rel="noopener noreferrer" class="nya-btn">百家号</a></li>
+<a href="https://om.qq.com/" rel="noopener noreferrer" class="nya-btn">企鹅号</a></li>
+<a href="https://mp.toutiao.com/" rel="noopener noreferrer" class="nya-btn">头条号</a></li>
+<a href="https://www.douyin.com/" rel="noopener noreferrer" class="nya-btn">抖音短视频</a></li>
+<a href="https://www.kuaishou.com/" rel="noopener noreferrer" class="nya-btn">快手短视频</a></li>
+<a href="https://member.bilibili.com/" rel="noopener noreferrer" class="nya-btn">bilibili创作中心</a></li>
+<a href="https://e.msxiaobing.com/" rel="noopener noreferrer" class="nya-btn">微软小冰</a></li>
+<a rel="nofollow" href="https://cli.im/" target="_blank" rel="noopener noreferrer" class="nya-btn">草料二维码</a></li>
+<a rel="nofollow" href="http://www.9thws.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">第九工场</a></li>
+<a rel="nofollow" href="http://www.135editor.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">135编辑器</a></li>
+<a rel="nofollow" href="https://xiumi.us/" target="_blank" rel="noopener noreferrer" class="nya-btn">秀米编辑器</a></li>
+<a rel="nofollow" href="https://naotu.baidu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">百度脑图</a></li>
+<a rel="nofollow" href="https://mubu.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">幕布</a></li>
+<a rel="nofollow" href="http://www.weshineapp.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">闪萌gif</a></li>
+<a rel="nofollow" href="https://wj.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯问卷</a></li>
+<a rel="nofollow" href="http://www.gsdata.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">清博指数</a></li>
+<a rel="nofollow" href="https://calendar.xmt.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">营销日历</a></li>
+<a rel="nofollow" href="https://weixin.sogou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">搜狗微信文章</a></li>
+<a rel="nofollow" href="https://www.rrxiu.net/" target="_blank" rel="noopener noreferrer" class="nya-btn">人人秀H5</a></li>
+<a rel="nofollow" href="https://cn.office-converter.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">格式转化</a></li>
+<a rel="nofollow" href="https://offers.adobe.com/en/na/audition/offers/audition_dlc.html" target="_blank" rel="noopener noreferrer" class="nya-btn">AU音效库</a></li>
+<a rel="nofollow" href="https://docs.qq.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯文档</a></li>
+<a rel="nofollow" href="https://shimo.im/" target="_blank" rel="noopener noreferrer" class="nya-btn">石墨文档</a></li>
+<a rel="nofollow" href="https://www.kdocs.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">金山文档</a></li>
+<a rel="nofollow" href="https://docs.google.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">谷歌文档</a></li>
+<a rel="nofollow" href="https://www.yinxiang.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">印象笔记</a></li>
+<a rel="nofollow" href="https://note.youdao.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">有道笔记</a></li>
+<a rel="nofollow" href="https://uzer.me" target="_blank" rel="noopener noreferrer" class="nya-btn">UZER.ME</a></li>
+<a rel="nofollow" href="http://www.ypppt.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">优品PPT</a></li>
+<a rel="nofollow" href="http://www.1ppt.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">第一PPT</a></li>
+<a rel="nofollow" href="https://www.pptboss.com/template-center" target="_blank" rel="noopener noreferrer" class="nya-btn">pptboss</a></li>
+<a rel="nofollow" href="https://slidesgo.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Slidesgo</a></li>
+<a rel="nofollow" href="https://templates.office.com/zh-CN" target="_blank" rel="noopener noreferrer" class="nya-btn">Office模板</a></li>
+<a rel="nofollow" href="http://www.officeplus.cn/Template/Home.shtml" target="_blank" rel="noopener noreferrer" class="nya-btn">Officeplus</a></li>
+<a rel="nofollow" href="http://www.51pptmoban.com/ppt/" target="_blank" rel="noopener noreferrer" class="nya-btn">51PPT</a></li>
+<a rel="nofollow" href="https://www.islide.cc/" target="_blank" rel="noopener noreferrer" class="nya-btn">iSlide</a></li>
+<a rel="nofollow" href="https://www.docer.com/free/ppt/" target="_blank" rel="noopener noreferrer" class="nya-btn">稻壳网</a></li>
+<a rel="nofollow" href="https://www.zsc5.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">找素材PPT</a></li>
+<a rel="nofollow" href="http://www.lfppt.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">雷锋PPT</a></li>
+<a rel="nofollow" href="https://justfreeslide.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Just Free Slides</a></li>
+<a rel="nofollow" href="http://www.pptfans.cn/pptmuban" target="_blank" rel="noopener noreferrer" class="nya-btn">PPTFans</a></li>
+<a rel="nofollow" href="https://0ppt.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">0PPT</a></li>
+<a rel="nofollow" href="http://sc.chinaz.com/ppt/free.html" target="_blank" rel="noopener noreferrer" class="nya-btn">站长PPT</a></li>
+<a rel="nofollow" href="http://www.dingdangsheji.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">叮当设计</a></li>
+<a rel="nofollow" href="http://www.hippter.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">Hippter</a></li>
+<a rel="nofollow" href="https://member.bilibili.com/studio/bs-editor" target="_blank" rel="noopener noreferrer" class="nya-btn">在线视频编辑器</a></li>
+<a rel="nofollow" href="http://www.aigei.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">爱给网</a></li>
+<a rel="nofollow" href="http://www.hellofont.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">字由</a></li>
+<a rel="nofollow" href="https://www.sxl.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">上线了</a></li>
+<a rel="nofollow" href="https://jianwai.netease.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">网易见外</a></li>
+<a rel="nofollow" href="https://fanyi.caiyunapp.com/#/video/" target="_blank" rel="noopener noreferrer" class="nya-btn">彩云小译</a></li>
+<a rel="nofollow" href="https://ktm.fkw.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">凡科快图</a></li>
+<a rel="nofollow" href="https://www.giiso.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">写作机器人</a></li>
+<a rel="nofollow" href="https://gitmind.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">GetMind</a></li>
+<a rel="nofollow" href="https://www.dingtalk.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">钉钉</a></li>
+<a rel="nofollow" href="https://work.weixin.qq.com/#indexDownload" target="_blank" rel="noopener noreferrer" class="nya-btn">企业微信</a></li>
+<a rel="nofollow" href="https://meeting.tencent.com/download-center.html" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯会议</a></li>
+<a href="http://hotu.co/hua/" rel="noopener noreferrer" class="nya-btn">在线画板</a></li>
+<a href="https://enhancv.com/" rel="noopener noreferrer" class="nya-btn">Enhancv</a></li>
+<a href="https://www.yuque.com/" rel="noopener noreferrer" class="nya-btn">语雀</a></li>
+<a href="https://www.wps.cn/learning/" rel="noopener noreferrer" class="nya-btn">WPS学院</a></li>
+<a href="https://www.ilovepdf.com/zh-cn" rel="noopener noreferrer" class="nya-btn">iLovePDF</a></li>
+<a href="https://tools.pdf24.org/zh/" rel="noopener noreferrer" class="nya-btn">PDF24 Tools</a></li>
+<a href="http://www.printfreegraphpaper.com/" rel="noopener noreferrer" class="nya-btn">格纸生成</a></li>
+<a href="https://www.mygraphpaper.com/index.php?lang=zh-hans" rel="noopener noreferrer" class="nya-btn">图形方格纸</a></li>
+<a href="https://powerbi.microsoft.com/zh-cn/" rel="noopener noreferrer" class="nya-btn">PowerBi数据可视化</a></li>
+<a href="https://smallpdf.com/cn" rel="noopener noreferrer" class="nya-btn">Smallpdf</a></li>
+<a rel="nofollow" href="https://marked.cc/" target="_blank" rel="noopener noreferrer" class="nya-btn">Marked.cc</a></li>
+<a rel="nofollow" href="http://yciyun.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">易词云</a></li>
+<a rel="nofollow" href="http://www.picdata.cn/picdata/#" target="_blank" rel="noopener noreferrer" class="nya-btn">图悦</a></li>
+<a rel="nofollow" href="http://upuptoyou.com/" target="_blank" rel="noopener noreferrer" class="nya-btn">UPUP拍立得</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-anchor" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>推广活动</span>
+</legend>
+<a rel="nofollow" href="http://ksyun.com/s/9ckWao" target="_blank" rel="noopener noreferrer" class="nya-btn">金山云88软妹币/一年云服务器</a></li>
+<a rel="nofollow" href="https://url.cn/0h2V1Nad" target="_blank" rel="noopener noreferrer" class="nya-btn">腾讯云99软妹币/一年云服务器</a></li>
+<a rel="nofollow" href="https://www.aliyun.com/activity/daily/bestoffer?userCode=qic8yjsf" target="_blank" rel="noopener noreferrer" class="nya-btn">阿里云96软妹币/一年云服务器</a></li>
+<a rel="nofollow" href="https://www.huangenet.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">50软妹币/永久微型香港空间</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-anchor" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>友情链接</span>
+</legend>
+<a rel="nofollow" href="https://aqingya.cn/" target="_blank" rel="noopener noreferrer" class="nya-btn">阿清的小站</a></li>
+<a rel="nofollow" href="http://www.spark-app.store/" target="_blank" rel="noopener noreferrer" class="nya-btn">星火应用商店</a></li>
+</script>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-anchor" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>自留地</span>
+</legend>
+<a rel="nofollow" href="tools/xsp" target="_blank" rel="noopener noreferrer" class="nya-btn">在线小视频</a></li>
+<a rel="nofollow" href="http://quickso.cn/api/" target="_blank" rel="noopener noreferrer" class="nya-btn">API1</a></li>
+<a rel="nofollow" href="http://quickso.cn/api2/" target="_blank" rel="noopener noreferrer" class="nya-btn">API2</a></li>
+<a rel="nofollow" href="speed" target="_blank" rel="noopener noreferrer" class="nya-btn">服务器测试</a></li>
+<a rel="nofollow" href="https://stats.uptimerobot.com/Zpyr8tMyJ5" target="_blank" rel="noopener noreferrer" class="nya-btn">站点状态</a></li>
+<a rel="nofollow" href="https://area.sinaapp.com/bingImg/" target="_blank" rel="noopener noreferrer" class="nya-btn">获取今日壁纸</a></li>
+<button onclick="myFunction()" class="nya-btn">关灯</button>
+<script>
+	function myFunction() {
+	var element = document.body;
+	element.classList.toggle("dark");}
+</script>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-anchor" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>我的</span>
+</legend>
+<a rel="nofollow" href="https://www.cnblogs.com/HGNET/" target="_blank" rel="noopener noreferrer" class="nya-btn">我的博客</a></li>
+<a rel="nofollow" href="https://m.weibo.cn/u/6261879891" target="_blank" rel="noopener noreferrer" class="nya-btn">我的微博</a></li>
+<a rel="nofollow" href="https://space.bilibili.com/100814804?share_medium=android&share_source=copy_link&bbid=aV0_WWFRZlA2UDIAfAB8infoc&ts=1564114681057" target="_blank" rel="noopener noreferrer" class="nya-btn">Bilibili</a></li>
+<a rel="nofollow" href="https://i.snssdk.com/rogue/ugc/profile/?version_code=737&version_name=70307&user_id=3384207598&media_id=1592523467945992&request_source=1&active_tab=dongtai&device_id=65&app_name=news_article" target="_blank" rel="noopener noreferrer" class="nya-btn">头条号</a></li>
+<a rel="nofollow" href="https://tieba.baidu.com/f?kw=欢哥网" target="_blank" rel="noopener noreferrer" class="nya-btn">百度贴吧</a></li>
+<a rel="nofollow" href="https://github.com/muzihuaner" target="_blank" rel="noopener noreferrer" class="nya-btn">Github</a></li>
+<a rel="nofollow" href="https://k.weidian.com/RVFO8pac" target="_blank" rel="noopener noreferrer" class="nya-btn">官方微店</a></li>
+
+<a rel="nofollow" href="https://yadi.sk/d/gBRPvFIoJpQN8w" target="_blank" rel="noopener noreferrer" class="nya-btn">个人网盘(备用)</a></li>
+</fieldset>
+<fieldset class="nya-container" rel="noopener noreferrer" class="nya-btn">
+<legend class="nya-title" rel="noopener noreferrer" class="nya-btn">
+<i class="fa fa-anchor" aria-hidden="true" rel="noopener noreferrer" class="nya-btn"></i>
+<span>More</span>
+</legend>
+<a rel="nofollow" href="about" target="_blank" rel="noopener noreferrer" class="nya-btn">关于我</a></li>
+<a rel="nofollow" href="thanks" target="_blank" rel="noopener noreferrer" class="nya-btn">捐赠本站</a></li>
+<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=pXHz64_pAQPKsiF1ANfnuiqvkPtMjenG&authKey=DMI1Id/qKcRV19YWk1humRb4VEBcPnGYKqSmoFtUk1OofvmQ7mmYrDKt+lg/qo+H&noverify=0" rel="noopener noreferrer" class="nya-btn"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="欢哥网" title="QQ群" rel="noopener noreferrer" class="nya-btn"></a></li>
+<a rel="nofollow" href="https://t.me/huangenet" target="_blank" rel="noopener noreferrer" class="nya-btn">TG电报交流群</a></li>
+<a rel="nofollow" href="https://support.qq.com/products/114435?" target="_blank" rel="noopener noreferrer" class="nya-btn">关于本站&留言</a></li>
+<a rel="nofollow" href="https://muzihuaner.github.io/HGNETAPP/" target="_blank" rel="noopener noreferrer" class="nya-btn">安卓客户端</a></li>
+<a rel="nofollow" href="sitemap.xml" target="_blank" rel="noopener noreferrer" class="nya-btn">Sitemap</a></li>
+<a rel="nofollow" href="https://web.51.la/report/main?comId=20575759" target="_blank" rel="noopener noreferrer" class="nya-btn">网站统计</a></li>
+</fieldset>
+<fieldset class="nya-container">
+<legend class="nya-title">
+<i class="fa fa-heart" aria-hidden="true"></i>
+<span>关注我们</span>
+</legend>
+<table border="1"><tr>
+<td><center><p>微信公众号</p></center><p><img alt="感谢支持！" src="https://i.loli.net/2020/08/04/xWUIuqLckrYeavm.jpg" width="100" height="100" /></p></td>
+<td><center><p>微博</p></center><p><img alt="感谢支持！" src="https://i.loli.net/2020/08/04/ECynPLFwz2oZlIp.jpg" width="100" height="100" /></p></td>
+<td><center><p>抖音</p></center><p><img alt="感谢支持！" src="https://i.loli.net/2020/08/04/q8NWTz3i6OIvJ9K.jpg" width="100" height="100" /></p></td><tr>
+<td><center><p>酷安</p></center><p><img alt="感谢支持！" src="https://i.loli.net/2020/08/04/yDdxGq1SLW6upmj.jpg" width="100" height="100" /></p></td>
+<td><center><p>Bilibili</p></center><p><img alt="感谢支持！" src="https://i.loli.net/2020/08/04/zeMKX1LUP79Y6ys.jpg" width="100" height="100" /></p></td>
+<td><center><p>快手</p></center><p><img alt="感谢支持！" src="https://i.loli.net/2020/08/05/y5uAWgpUcTXL8dj.jpg" width="100" height="100" /></p></td>
+</table>
+</fieldset>
+
+</div>
+</div>
+</main>
+</div>
+<div class="footer">
+<center>
+
+<script type="text/JavaScript">
+		   
+		   document.write("<b>快点搜已稳定运行</b><font color=red>");
+		   
+		   var urodz= new Date("1/6/2020");
+		   
+		   var now = new Date();
+		   
+		   var ile = now.getTime() - urodz.getTime();
+		   
+		   var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
+		   
+		   document.write(dni);
+		   
+		   document.write("</font>天！");
+		   </script>
+</center>
+<br>
+
+<center>Copyright © 2016-2020  All rights reserved. </center>
+<br>
+<div title="MySSL 安全签章" id="myssl_seal" onclick="window.open('https://myssl.com/seal/detail?domain=quickso.cn','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center"><img src="https://sealres.myssl.com/seal/img/1x/seal.svg?domain=quickso.cn" alt="MySSL 安全签章" style="width: 100px; height: auto; cursor: pointer">
+</div>
+<br>
+<center><a href="https://travellings.now.sh/" target="blank" title="开往-友链接力"><img src="https://travellings.now.sh/assets/logo.gif" alt="开往-友链接力" width="100"></a></center>
+<br>
+
+<center><a href="https://clustrmaps.com/site/1bcv1" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=0HKA2C6RwPfxaOQpJSYqdKzZ3t2ctd5PuTjdiMErTis&cl=ffffff" /></a></center>
+<br>
+</div>
+<script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+<script>
+	const options = {
+  		bottom: '64px', // default: '32px'
+  		right: '32px', // default: '32px'
+  		left: 'unset', // default: 'unset'
+  		time: '0.5s', // default: '0.3s'
+  		mixColor: '#fff', // default: '#fff'
+  		backgroundColor: '#fff',  // default: '#fff'
+  		buttonColorDark: '#100f2c',  // default: '#100f2c'
+  		buttonColorLight: '#fff', // default: '#fff'
+  		saveInCookies: true, // default: true,
+  		label: '🌓', // default: ''
+  		autoMatchOsTheme: true // default: true
+	}
+
+	const darkmode = new Darkmode(options);
+	darkmode.showWidget();		
+</script>
+
+<script type="text/javascript" src="//js.users.51.la/20575759.js"></script>
+
+<script>
+   document.oncontextmenu = function (event){
+	   if(window.event){
+	   event = window.event;
+	   }try{
+	   var the = event.srcElement;
+	   if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")){
+	   return false;
+	   }
+	   return true;
+	   }catch (e){
+	   return false;
+	   }
+   }
+</script>
+<script>
+	document.onkeydown = function(){
+
+		if(window.event && window.event.keyCode == 123) {
+		   alert("哼！我就知道你会这样~");
+		   event.keyCode=0;
+		   event.returnValue=false;
+		}
+		if(window.event && window.event.keyCode == 13) {
+		   window.event.keyCode = 505;
+		}
+		if(window.event && window.event.keyCode == 8) {
+		   alert(str+"\n请使用Del键进行字符的删除操作！");
+		   window.event.returnValue=false;
+		}
+	}
+</script>
+
+<script>
+if ((location.href || '').indexOf('tiaoshi') > -1) {
+    document.write('<script src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"><\/script>');
+    document.write('<script>new VConsole()<\/script>');
+}
+</script>
+
+<script>
+
+	var _hmt = _hmt || [];
+	
+	(function() {
+	
+	  var hm = document.createElement("script");
+	
+	  hm.src = "https://hm.baidu.com/hm.js?71a5543c0e173ea0cee2161eaae3461a";
+	
+	  var s = document.getElementsByTagName("script")[0]; 
+	
+	  s.parentNode.insertBefore(hm, s);
+	
+	})();
+	
+	</script>
+
+<script>
+	
+	(function(){
+	
+		var bp = document.createElement('script');
+	
+		var curProtocol = window.location.protocol.split(':')[0];
+	
+		if (curProtocol === 'https') {
+	
+			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+	
+		}
+	
+		else {
+	
+			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	
+		}
+	
+		var s = document.getElementsByTagName("script")[0];
+	
+		s.parentNode.insertBefore(bp, s);
+	
+	})();
+	
+	</script>
+
+
+<script>
+	
+	(function(){
+		if(false ) {
+	
+			  var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?875c73918f62216005ee7f48b54ceaf8":"https://jspassport.ssl.qhimg.com/11.0.1.js?875c73918f62216005ee7f48b54ceaf8";
+	
+			  document.write('<script src="' + src + '" id="sozz"><\/script>');
+		}
+	})();
+</script>
+</body>
+</html>
